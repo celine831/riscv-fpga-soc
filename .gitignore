@@ -1,0 +1,8 @@
+﻿/doc/
+/v2_mcu/
+**/db/
+**/incremental_db/
+**/output_files/
+**/.qsys_edit/
+**/Qproject/simulation/
+**/*_nativelink_simulation.rpt
