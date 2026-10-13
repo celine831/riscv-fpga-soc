@@ -1,0 +1,47 @@
+
+TEST 1: asynchronous reset
+[PASS] PC is zero: actual=00000000
+[PASS] ROM outputs NOP: actual=00000013
+[PASS] x1 is zero: actual=00000000
+
+TEST 2: arithmetic and logic instructions
+[PASS] ADDI x1: actual=0000000a
+[PASS] ADDI x2: actual=00000003
+[PASS] ADD x3: actual=0000000d
+[PASS] SUB x4: actual=00000007
+[PASS] AND x5: actual=00000002
+[PASS] OR x6: actual=0000000b
+[PASS] XOR x7: actual=00000009
+[PASS] LUI x8: actual=12345000
+
+TEST 3: SW and two-cycle LW
+[PASS] SW advances PC to 36: actual=00000024
+[PASS] SW stores 13: actual=0000000d
+[PASS] LW first cycle holds PC: actual=00000024
+[PASS] LW first cycle does not write x9: actual=00000000
+[PASS] LW second cycle advances PC: actual=00000028
+[PASS] LW writes 13 into x9: actual=0000000d
+
+TEST 4: branches and jumps
+[PASS] BEQ jumps to 48: actual=00000030
+[PASS] x10 is skipped: actual=00000000
+[PASS] BNE jumps to 56: actual=00000038
+[PASS] x11 is skipped: actual=00000000
+[PASS] JAL jumps to 64: actual=00000040
+[PASS] JAL return address: actual=0000003c
+[PASS] x14 contains JALR target: actual=0000004c
+[PASS] JALR jumps to 76: actual=0000004c
+[PASS] JALR return address: actual=00000048
+[PASS] x16 is skipped: actual=00000000
+[PASS] program completion value: actual=0000001f
+[PASS] PC advances to 80: actual=00000050
+
+TEST 5: reset after execution
+[PASS] PC returns to zero: actual=00000000
+[PASS] x17 is cleared: actual=00000000
+[PASS] RAM output is masked to zero: actual=00000000
+
+========================================
+tb_cpu_top PASS: checks=32
+========================================
+

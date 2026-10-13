@@ -1,0 +1,14 @@
+Icarus Verilog; Verilog-2001; 12 testbenches
+tb_alu PASS: checks=16
+tb_control_unit PASS: checks=19
+tb_cpu_gpio PASS: checks=188
+tb_cpu_top PASS: checks=32
+tb_data_ram PASS: checks=12
+tb_decoder PASS: checks=57
+tb_fpga_top PASS: checks=113
+tb_gpio PASS: checks=32
+tb_imm_gen PASS: checks=101
+tb_instr_rom PASS: checks=25
+tb_pc_reg PASS: checks=11
+tb_regsfile PASS
+ALL 12 TESTBENCHES PASSED

@@ -1,0 +1,8 @@
+TEST: I format: sign extension and limits
+TEST: S format: both split fields
+TEST: B format: byte offsets, already shifted
+TEST: U format: low 12 bits must be zero
+TEST: J format: byte offsets, already shifted
+TEST: walking one across B/J immediate fields
+TEST: type changes with identical inst, including defaults
+tb_imm_gen PASS: checks=101

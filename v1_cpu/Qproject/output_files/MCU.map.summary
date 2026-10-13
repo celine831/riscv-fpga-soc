@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - 
+Quartus II 64-Bit Version : 13.0.1 Build 232  SP 1 SJ Full Version
+Revision Name : MCU
+Top-level Entity Name : fpga_top
+Family : Cyclone IV E
+Total logic elements : 2,434
+    Total combinational functions : 1,465
+    Dedicated logic registers : 1,086
+Total registers : 1086
+Total pins : 4
+Total virtual pins : 0
+Total memory bits : 8,192
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

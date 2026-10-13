@@ -1,0 +1,764 @@
+# Reading D:/00study/01fpga/DownloadSoftware/modelsim_se/tcl/vsim/pref.tcl
+# //  ModelSim SE-64 10.5  
+# //
+# //  Copyright  Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do MCU_run_msim_rtl_verilog.do
+# if ![file isdirectory verilog_libs] {
+# 	file mkdir verilog_libs
+# }
+# 
+# vlib verilog_libs/altera_ver
+# ** Warning: (vlib-34) Library already exists at "verilog_libs/altera_ver".
+# vmap altera_ver ./verilog_libs/altera_ver
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 
+# vmap altera_ver ./verilog_libs/altera_ver 
+# Copying D:/00study/01fpga/DownloadSoftware/modelsim_se/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# vlog -vlog01compat -work altera_ver {d:/00study/01fpga/downloadsoftware/quarturs_ii_13_0/quartus/eda/sim_lib/altera_primitives.v}
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 
+# vlog -reportprogress 300 -vlog01compat -work altera_ver d:/00study/01fpga/downloadsoftware/quarturs_ii_13_0/quartus/eda/sim_lib/altera_primitives.v 
+# -- Compiling module global
+# -- Compiling module carry
+# -- Compiling module cascade
+# -- Compiling module carry_sum
+# -- Compiling module exp
+# -- Compiling module soft
+# -- Compiling module opndrn
+# -- Compiling module row_global
+# -- Compiling module TRI
+# -- Compiling module lut_input
+# -- Compiling module lut_output
+# -- Compiling module latch
+# -- Compiling module dlatch
+# -- Compiling module prim_gdff
+# -- Compiling module dff
+# -- Compiling module dffe
+# -- Compiling module dffea
+# -- Compiling module dffeas
+# -- Compiling module prim_gtff
+# -- Compiling module tff
+# -- Compiling module tffe
+# -- Compiling module prim_gjkff
+# -- Compiling module jkff
+# -- Compiling module jkffe
+# -- Compiling module prim_gsrff
+# -- Compiling module srff
+# -- Compiling module srffe
+# -- Compiling module clklock
+# -- Compiling module alt_inbuf
+# -- Compiling module alt_outbuf
+# -- Compiling module alt_outbuf_tri
+# -- Compiling module alt_iobuf
+# -- Compiling module alt_inbuf_diff
+# -- Compiling module alt_outbuf_diff
+# -- Compiling module alt_outbuf_tri_diff
+# -- Compiling module alt_iobuf_diff
+# -- Compiling module alt_bidir_diff
+# -- Compiling module alt_bidir_buf
+# -- Compiling UDP PRIM_GDFF_LOW
+# -- Compiling UDP PRIM_GDFF_HIGH
+# 
+# Top level modules:
+# 	global
+# 	carry
+# 	cascade
+# 	carry_sum
+# 	exp
+# 	soft
+# 	opndrn
+# 	row_global
+# 	TRI
+# 	lut_input
+# 	lut_output
+# 	latch
+# 	dlatch
+# 	dff
+# 	dffe
+# 	dffea
+# 	dffeas
+# 	tff
+# 	tffe
+# 	jkff
+# 	jkffe
+# 	srff
+# 	srffe
+# 	clklock
+# 	alt_inbuf
+# 	alt_outbuf
+# 	alt_outbuf_tri
+# 	alt_iobuf
+# 	alt_inbuf_diff
+# 	alt_outbuf_diff
+# 	alt_outbuf_tri_diff
+# 	alt_iobuf_diff
+# 	alt_bidir_diff
+# 	alt_bidir_buf
+# Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlib verilog_libs/lpm_ver
+# ** Warning: (vlib-34) Library already exists at "verilog_libs/lpm_ver".
+# vmap lpm_ver ./verilog_libs/lpm_ver
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 
+# vmap lpm_ver ./verilog_libs/lpm_ver 
+# Modifying modelsim.ini
+# vlog -vlog01compat -work lpm_ver {d:/00study/01fpga/downloadsoftware/quarturs_ii_13_0/quartus/eda/sim_lib/220model.v}
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 
+# vlog -reportprogress 300 -vlog01compat -work lpm_ver d:/00study/01fpga/downloadsoftware/quarturs_ii_13_0/quartus/eda/sim_lib/220model.v 
+# -- Compiling module LPM_MEMORY_INITIALIZATION
+# -- Compiling module LPM_HINT_EVALUATION
+# -- Compiling module LPM_DEVICE_FAMILIES
+# -- Compiling module lpm_constant
+# -- Compiling module lpm_inv
+# -- Compiling module lpm_and
+# -- Compiling module lpm_or
+# -- Compiling module lpm_xor
+# -- Compiling module lpm_bustri
+# -- Compiling module lpm_mux
+# -- Compiling module lpm_decode
+# -- Compiling module lpm_clshift
+# -- Compiling module lpm_add_sub
+# -- Compiling module lpm_compare
+# -- Compiling module lpm_mult
+# -- Compiling module lpm_divide
+# -- Compiling module lpm_abs
+# -- Compiling module lpm_counter
+# -- Compiling module lpm_latch
+# -- Compiling module lpm_ff
+# -- Compiling module lpm_shiftreg
+# -- Compiling module lpm_ram_dq
+# -- Compiling module lpm_ram_dp
+# -- Compiling module lpm_ram_io
+# -- Compiling module lpm_rom
+# -- Compiling module lpm_fifo
+# -- Compiling module lpm_fifo_dc_dffpipe
+# -- Compiling module lpm_fifo_dc_fefifo
+# -- Compiling module lpm_fifo_dc_async
+# -- Compiling module lpm_fifo_dc
+# -- Compiling module lpm_inpad
+# -- Compiling module lpm_outpad
+# -- Compiling module lpm_bipad
+# 
+# Top level modules:
+# 	lpm_constant
+# 	lpm_inv
+# 	lpm_and
+# 	lpm_or
+# 	lpm_xor
+# 	lpm_bustri
+# 	lpm_mux
+# 	lpm_decode
+# 	lpm_clshift
+# 	lpm_add_sub
+# 	lpm_compare
+# 	lpm_mult
+# 	lpm_divide
+# 	lpm_abs
+# 	lpm_counter
+# 	lpm_latch
+# 	lpm_ff
+# 	lpm_shiftreg
+# 	lpm_ram_dq
+# 	lpm_ram_dp
+# 	lpm_ram_io
+# 	lpm_rom
+# 	lpm_fifo
+# 	lpm_fifo_dc
+# 	lpm_inpad
+# 	lpm_outpad
+# 	lpm_bipad
+# Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlib verilog_libs/sgate_ver
+# ** Warning: (vlib-34) Library already exists at "verilog_libs/sgate_ver".
+# vmap sgate_ver ./verilog_libs/sgate_ver
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 
+# vmap sgate_ver ./verilog_libs/sgate_ver 
+# Modifying modelsim.ini
+# vlog -vlog01compat -work sgate_ver {d:/00study/01fpga/downloadsoftware/quarturs_ii_13_0/quartus/eda/sim_lib/sgate.v}
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 
+# vlog -reportprogress 300 -vlog01compat -work sgate_ver d:/00study/01fpga/downloadsoftware/quarturs_ii_13_0/quartus/eda/sim_lib/sgate.v 
+# -- Compiling module oper_add
+# -- Compiling module oper_addsub
+# -- Compiling module mux21
+# -- Compiling module io_buf_tri
+# -- Compiling module io_buf_opdrn
+# -- Compiling module oper_mult
+# -- Compiling module tri_bus
+# -- Compiling module oper_div
+# -- Compiling module oper_mod
+# -- Compiling module oper_left_shift
+# -- Compiling module oper_right_shift
+# -- Compiling module oper_rotate_left
+# -- Compiling module oper_rotate_right
+# -- Compiling module oper_less_than
+# -- Compiling module oper_mux
+# -- Compiling module oper_selector
+# -- Compiling module oper_decoder
+# -- Compiling module oper_bus_mux
+# -- Compiling module oper_latch
+# 
+# Top level modules:
+# 	oper_add
+# 	oper_addsub
+# 	mux21
+# 	io_buf_tri
+# 	io_buf_opdrn
+# 	oper_mult
+# 	tri_bus
+# 	oper_div
+# 	oper_mod
+# 	oper_left_shift
+# 	oper_right_shift
+# 	oper_rotate_left
+# 	oper_rotate_right
+# 	oper_less_than
+# 	oper_mux
+# 	oper_selector
+# 	oper_decoder
+# 	oper_bus_mux
+# 	oper_latch
+# Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlib verilog_libs/altera_mf_ver
+# ** Warning: (vlib-34) Library already exists at "verilog_libs/altera_mf_ver".
+# vmap altera_mf_ver ./verilog_libs/altera_mf_ver
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 
+# vmap altera_mf_ver ./verilog_libs/altera_mf_ver 
+# Modifying modelsim.ini
+# vlog -vlog01compat -work altera_mf_ver {d:/00study/01fpga/downloadsoftware/quarturs_ii_13_0/quartus/eda/sim_lib/altera_mf.v}
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 
+# vlog -reportprogress 300 -vlog01compat -work altera_mf_ver d:/00study/01fpga/downloadsoftware/quarturs_ii_13_0/quartus/eda/sim_lib/altera_mf.v 
+# -- Compiling module lcell
+# -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
+# -- Compiling module ALTERA_MF_HINT_EVALUATION
+# -- Compiling module ALTERA_DEVICE_FAMILIES
+# -- Compiling module dffp
+# -- Compiling module pll_iobuf
+# -- Compiling module stx_m_cntr
+# -- Compiling module stx_n_cntr
+# -- Compiling module stx_scale_cntr
+# -- Compiling module MF_pll_reg
+# -- Compiling module MF_stratix_pll
+# -- Compiling module arm_m_cntr
+# -- Compiling module arm_n_cntr
+# -- Compiling module arm_scale_cntr
+# -- Compiling module MF_stratixii_pll
+# -- Compiling module ttn_m_cntr
+# -- Compiling module ttn_n_cntr
+# -- Compiling module ttn_scale_cntr
+# -- Compiling module MF_stratixiii_pll
+# -- Compiling module cda_m_cntr
+# -- Compiling module cda_n_cntr
+# -- Compiling module cda_scale_cntr
+# -- Compiling module MF_cycloneiii_pll
+# -- Compiling module MF_cycloneiiigl_m_cntr
+# -- Compiling module MF_cycloneiiigl_n_cntr
+# -- Compiling module MF_cycloneiiigl_scale_cntr
+# -- Compiling module cycloneiiigl_post_divider
+# -- Compiling module MF_cycloneiiigl_pll
+# -- Compiling module altpll
+# -- Compiling module altlvds_rx
+# -- Compiling module stratix_lvds_rx
+# -- Compiling module stratixgx_dpa_lvds_rx
+# -- Compiling module stratixii_lvds_rx
+# -- Compiling module flexible_lvds_rx
+# -- Compiling module stratixiii_lvds_rx
+# -- Compiling module stratixiii_lvds_rx_channel
+# -- Compiling module stratixiii_lvds_rx_dpa
+# -- Compiling module altlvds_tx
+# -- Compiling module stratixv_local_clk_divider
+# -- Compiling module stratix_tx_outclk
+# -- Compiling module stratixii_tx_outclk
+# -- Compiling module flexible_lvds_tx
+# -- Compiling module dcfifo_dffpipe
+# -- Compiling module dcfifo_fefifo
+# -- Compiling module dcfifo_async
+# -- Compiling module dcfifo_sync
+# -- Compiling module dcfifo_low_latency
+# -- Compiling module dcfifo_mixed_widths
+# -- Compiling module dcfifo
+# -- Compiling module altaccumulate
+# -- Compiling module altmult_accum
+# -- Compiling module altmult_add
+# -- Compiling module altfp_mult
+# -- Compiling module altsqrt
+# -- Compiling module altclklock
+# -- Compiling module altddio_in
+# -- Compiling module altddio_out
+# -- Compiling module altddio_bidir
+# -- Compiling module altdpram
+# -- Compiling module altsyncram
+# -- Compiling module alt3pram
+# -- Compiling module parallel_add
+# -- Compiling module scfifo
+# -- Compiling module altshift_taps
+# -- Compiling module a_graycounter
+# -- Compiling module altsquare
+# -- Compiling module altera_std_synchronizer
+# -- Compiling module altera_std_synchronizer_bundle
+# -- Compiling module alt_cal
+# -- Compiling module alt_cal_mm
+# -- Compiling module alt_cal_c3gxb
+# -- Compiling module alt_cal_sv
+# -- Compiling module alt_cal_av
+# -- Compiling module alt_aeq_s4
+# -- Compiling module alt_eyemon
+# -- Compiling module alt_dfe
+# -- Compiling module signal_gen
+# -- Compiling module jtag_tap_controller
+# -- Compiling module dummy_hub
+# -- Compiling module sld_virtual_jtag
+# -- Compiling module sld_signaltap
+# -- Compiling module altstratixii_oct
+# -- Compiling module altparallel_flash_loader
+# -- Compiling module altserial_flash_loader
+# -- Compiling module sld_virtual_jtag_basic
+# -- Compiling module altsource_probe
+# 
+# Top level modules:
+# 	lcell
+# 	altpll
+# 	altlvds_rx
+# 	altlvds_tx
+# 	dcfifo
+# 	altaccumulate
+# 	altmult_accum
+# 	altmult_add
+# 	altfp_mult
+# 	altsqrt
+# 	altclklock
+# 	altddio_bidir
+# 	altdpram
+# 	alt3pram
+# 	parallel_add
+# 	scfifo
+# 	altshift_taps
+# 	a_graycounter
+# 	altsquare
+# 	altera_std_synchronizer_bundle
+# 	alt_cal
+# 	alt_cal_mm
+# 	alt_cal_c3gxb
+# 	alt_cal_sv
+# 	alt_cal_av
+# 	alt_aeq_s4
+# 	alt_eyemon
+# 	alt_dfe
+# 	sld_virtual_jtag
+# 	sld_signaltap
+# 	altstratixii_oct
+# 	altparallel_flash_loader
+# 	altserial_flash_loader
+# 	sld_virtual_jtag_basic
+# 	altsource_probe
+# Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlib verilog_libs/altera_lnsim_ver
+# ** Warning: (vlib-34) Library already exists at "verilog_libs/altera_lnsim_ver".
+# vmap altera_lnsim_ver ./verilog_libs/altera_lnsim_ver
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 
+# vmap altera_lnsim_ver ./verilog_libs/altera_lnsim_ver 
+# Modifying modelsim.ini
+# vlog -sv -work altera_lnsim_ver {d:/00study/01fpga/downloadsoftware/quarturs_ii_13_0/quartus/eda/sim_lib/altera_lnsim.sv}
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 
+# vlog -reportprogress 300 -sv -work altera_lnsim_ver d:/00study/01fpga/downloadsoftware/quarturs_ii_13_0/quartus/eda/sim_lib/altera_lnsim.sv 
+# -- Compiling package altera_lnsim_functions
+# -- Compiling module altera_pll
+# -- Importing package altera_lnsim_functions
+# -- Compiling module dps_extra_kick
+# -- Compiling module dprio_init
+# -- Compiling module pll_dps_lcell_comb
+# -- Compiling module altera_stratixv_pll
+# -- Compiling module altera_arriav_pll
+# -- Compiling module altera_arriavgz_pll
+# -- Compiling module altera_cyclonev_pll
+# -- Compiling package altera_generic_pll_functions
+# -- Compiling module generic_pll
+# -- Importing package altera_generic_pll_functions
+# -- Compiling module generic_cdr
+# -- Compiling module common_28nm_ram_pulse_generator
+# -- Compiling module common_28nm_ram_register
+# -- Compiling module common_28nm_ram_block
+# -- Compiling module generic_m20k
+# -- Compiling module generic_m10k
+# -- Compiling module common_28nm_mlab_cell_pulse_generator
+# -- Compiling module common_28nm_mlab_latch
+# -- Compiling module common_28nm_mlab_cell_core
+# -- Compiling module common_porta_latches
+# -- Compiling module generic_28nm_hp_mlab_cell_impl
+# -- Compiling module common_porta_registers
+# -- Compiling module generic_28nm_lc_mlab_cell_impl
+# -- Compiling module generic_mux
+# -- Compiling module generic_device_pll
+# -- Compiling module altera_mult_add
+# -- Compiling module altera_mult_add_rtl
+# -- Compiling module ama_signed_extension_function
+# -- Compiling module ama_dynamic_signed_function
+# -- Compiling module ama_register_function
+# -- Compiling module ama_register_with_ext_function
+# -- Compiling module ama_data_split_reg_ext_function
+# -- Compiling module ama_coef_reg_ext_function
+# -- Compiling module ama_adder_function
+# -- Compiling module ama_multiplier_function
+# -- Compiling module ama_preadder_function
+# -- Compiling module ama_accumulator_function
+# -- Compiling module ama_systolic_adder_function
+# -- Compiling module ama_scanchain
+# -- Compiling module altera_pll_reconfig_tasks
+# 
+# Top level modules:
+# 	altera_pll
+# 	generic_cdr
+# 	generic_m20k
+# 	generic_m10k
+# 	common_porta_latches
+# 	generic_28nm_hp_mlab_cell_impl
+# 	generic_28nm_lc_mlab_cell_impl
+# 	generic_mux
+# 	generic_device_pll
+# 	altera_mult_add
+# 	altera_pll_reconfig_tasks
+# Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlib verilog_libs/cycloneive_ver
+# ** Warning: (vlib-34) Library already exists at "verilog_libs/cycloneive_ver".
+# vmap cycloneive_ver ./verilog_libs/cycloneive_ver
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 
+# vmap cycloneive_ver ./verilog_libs/cycloneive_ver 
+# Modifying modelsim.ini
+# vlog -vlog01compat -work cycloneive_ver {d:/00study/01fpga/downloadsoftware/quarturs_ii_13_0/quartus/eda/sim_lib/cycloneive_atoms.v}
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 
+# vlog -reportprogress 300 -vlog01compat -work cycloneive_ver d:/00study/01fpga/downloadsoftware/quarturs_ii_13_0/quartus/eda/sim_lib/cycloneive_atoms.v 
+# -- Compiling UDP CYCLONEIVE_PRIM_DFFE
+# -- Compiling UDP CYCLONEIVE_PRIM_DFFEAS
+# -- Compiling UDP CYCLONEIVE_PRIM_DFFEAS_HIGH
+# -- Compiling module cycloneive_dffe
+# -- Compiling module cycloneive_mux21
+# -- Compiling module cycloneive_mux41
+# -- Compiling module cycloneive_and1
+# -- Compiling module cycloneive_and16
+# -- Compiling module cycloneive_bmux21
+# -- Compiling module cycloneive_b17mux21
+# -- Compiling module cycloneive_nmux21
+# -- Compiling module cycloneive_b5mux21
+# -- Compiling module cycloneive_latch
+# -- Compiling module cycloneive_routing_wire
+# -- Compiling module cycloneive_m_cntr
+# -- Compiling module cycloneive_n_cntr
+# -- Compiling module cycloneive_scale_cntr
+# -- Compiling module cycloneive_pll_reg
+# -- Compiling module cycloneive_pll
+# -- Compiling module cycloneive_lcell_comb
+# -- Compiling module cycloneive_ff
+# -- Compiling module cycloneive_ram_pulse_generator
+# -- Compiling module cycloneive_ram_register
+# -- Compiling module cycloneive_ram_block
+# -- Compiling module cycloneive_mac_data_reg
+# -- Compiling module cycloneive_mac_sign_reg
+# -- Compiling module cycloneive_mac_mult_internal
+# -- Compiling module cycloneive_mac_mult
+# -- Compiling module cycloneive_mac_out
+# -- Compiling module cycloneive_io_ibuf
+# -- Compiling module cycloneive_io_obuf
+# -- Compiling module cycloneive_ddio_out
+# -- Compiling module cycloneive_ddio_oe
+# -- Compiling module cycloneive_pseudo_diff_out
+# -- Compiling module cycloneive_io_pad
+# -- Compiling module cycloneive_ena_reg
+# -- Compiling module cycloneive_clkctrl
+# -- Compiling module cycloneive_rublock
+# -- Compiling module cycloneive_apfcontroller
+# -- Compiling module cycloneive_termination_ctrl
+# -- Compiling module cycloneive_termination_rupdn
+# -- Compiling module cycloneive_termination
+# -- Compiling module cycloneive_jtag
+# -- Compiling module cycloneive_crcblock
+# -- Compiling module cycloneive_oscillator
+# 
+# Top level modules:
+# 	cycloneive_dffe
+# 	cycloneive_and1
+# 	cycloneive_and16
+# 	cycloneive_bmux21
+# 	cycloneive_b17mux21
+# 	cycloneive_nmux21
+# 	cycloneive_b5mux21
+# 	cycloneive_pll_reg
+# 	cycloneive_pll
+# 	cycloneive_lcell_comb
+# 	cycloneive_ff
+# 	cycloneive_ram_block
+# 	cycloneive_mac_mult
+# 	cycloneive_mac_out
+# 	cycloneive_io_ibuf
+# 	cycloneive_io_obuf
+# 	cycloneive_ddio_out
+# 	cycloneive_ddio_oe
+# 	cycloneive_pseudo_diff_out
+# 	cycloneive_io_pad
+# 	cycloneive_clkctrl
+# 	cycloneive_rublock
+# 	cycloneive_apfcontroller
+# 	cycloneive_termination
+# 	cycloneive_jtag
+# 	cycloneive_crcblock
+# 	cycloneive_oscillator
+# Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/02GitHub/01riscv-fpga-soc/rtl {D:/02GitHub/01riscv-fpga-soc/rtl/fpga_top.v}
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/02GitHub/01riscv-fpga-soc/rtl" D:/02GitHub/01riscv-fpga-soc/rtl/fpga_top.v 
+# -- Compiling module fpga_top
+# 
+# Top level modules:
+# 	fpga_top
+# Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/02GitHub/01riscv-fpga-soc/rtl {D:/02GitHub/01riscv-fpga-soc/rtl/cpu_top.v}
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/02GitHub/01riscv-fpga-soc/rtl" D:/02GitHub/01riscv-fpga-soc/rtl/cpu_top.v 
+# -- Compiling module cpu_top
+# 
+# Top level modules:
+# 	cpu_top
+# Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/02GitHub/01riscv-fpga-soc/rtl {D:/02GitHub/01riscv-fpga-soc/rtl/pc_reg.v}
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/02GitHub/01riscv-fpga-soc/rtl" D:/02GitHub/01riscv-fpga-soc/rtl/pc_reg.v 
+# -- Compiling module pc_reg
+# 
+# Top level modules:
+# 	pc_reg
+# Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/02GitHub/01riscv-fpga-soc/rtl {D:/02GitHub/01riscv-fpga-soc/rtl/control_unit.v}
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/02GitHub/01riscv-fpga-soc/rtl" D:/02GitHub/01riscv-fpga-soc/rtl/control_unit.v 
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/02GitHub/01riscv-fpga-soc/rtl {D:/02GitHub/01riscv-fpga-soc/rtl/data_ram.v}
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/02GitHub/01riscv-fpga-soc/rtl" D:/02GitHub/01riscv-fpga-soc/rtl/data_ram.v 
+# -- Compiling module data_ram
+# 
+# Top level modules:
+# 	data_ram
+# Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/02GitHub/01riscv-fpga-soc/rtl {D:/02GitHub/01riscv-fpga-soc/rtl/instr_rom.v}
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/02GitHub/01riscv-fpga-soc/rtl" D:/02GitHub/01riscv-fpga-soc/rtl/instr_rom.v 
+# -- Compiling module instr_rom
+# 
+# Top level modules:
+# 	instr_rom
+# Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/02GitHub/01riscv-fpga-soc/rtl {D:/02GitHub/01riscv-fpga-soc/rtl/imm_gen.v}
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/02GitHub/01riscv-fpga-soc/rtl" D:/02GitHub/01riscv-fpga-soc/rtl/imm_gen.v 
+# -- Compiling module imm_gen
+# 
+# Top level modules:
+# 	imm_gen
+# Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/02GitHub/01riscv-fpga-soc/rtl {D:/02GitHub/01riscv-fpga-soc/rtl/decoder.v}
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/02GitHub/01riscv-fpga-soc/rtl" D:/02GitHub/01riscv-fpga-soc/rtl/decoder.v 
+# -- Compiling module decoder
+# 
+# Top level modules:
+# 	decoder
+# Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/02GitHub/01riscv-fpga-soc/rtl {D:/02GitHub/01riscv-fpga-soc/rtl/regsfile.v}
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/02GitHub/01riscv-fpga-soc/rtl" D:/02GitHub/01riscv-fpga-soc/rtl/regsfile.v 
+# -- Compiling module regsfile
+# 
+# Top level modules:
+# 	regsfile
+# Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/02GitHub/01riscv-fpga-soc/rtl {D:/02GitHub/01riscv-fpga-soc/rtl/alu.v}
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/02GitHub/01riscv-fpga-soc/rtl" D:/02GitHub/01riscv-fpga-soc/rtl/alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/02GitHub/01riscv-fpga-soc/Qproject/../sim {D:/02GitHub/01riscv-fpga-soc/Qproject/../sim/tb_cpu_top.v}
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/02GitHub/01riscv-fpga-soc/Qproject/../sim" D:/02GitHub/01riscv-fpga-soc/Qproject/../sim/tb_cpu_top.v 
+# -- Compiling module tb_cpu_top
+# 
+# Top level modules:
+# 	tb_cpu_top
+# Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb_cpu_top
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" tb_cpu_top 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.tb_cpu_top(fast)
+# Loading work.cpu_top(fast)
+# Loading work.pc_reg(fast)
+# Loading work.instr_rom(fast)
+# Loading work.decoder(fast)
+# Loading work.imm_gen(fast)
+# Loading work.control_unit(fast)
+# Loading work.regsfile(fast)
+# Loading work.alu(fast)
+# Loading work.data_ram(fast)
+# 
+# add wave *
+# 
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1 us
+# 
+# TEST 1: asynchronous reset
+# [PASS] PC is zero: actual=00000000
+# [PASS] instruction register resets to NOP: actual=00000013
+# [PASS] x1 is zero: actual=00000000
+# 
+# TEST 2: arithmetic and logic instructions
+# [PASS] FETCH phase disables register writes: actual=00000000
+# [PASS] FETCH phase disables RAM writes: actual=00000000
+# [PASS] FETCH holds PC: actual=00000000
+# [PASS] ADDI x1: actual=0000000a
+# [PASS] FETCH phase disables register writes: actual=00000000
+# [PASS] FETCH phase disables RAM writes: actual=00000000
+# [PASS] FETCH holds PC: actual=00000004
+# [PASS] ADDI x2: actual=00000003
+# [PASS] FETCH phase disables register writes: actual=00000000
+# [PASS] FETCH phase disables RAM writes: actual=00000000
+# [PASS] FETCH holds PC: actual=00000008
+# [PASS] ADD x3: actual=0000000d
+# [PASS] FETCH phase disables register writes: actual=00000000
+# [PASS] FETCH phase disables RAM writes: actual=00000000
+# [PASS] FETCH holds PC: actual=0000000c
+# [PASS] SUB x4: actual=00000007
+# [PASS] FETCH phase disables register writes: actual=00000000
+# [PASS] FETCH phase disables RAM writes: actual=00000000
+# [PASS] FETCH holds PC: actual=00000010
+# [PASS] AND x5: actual=00000002
+# [PASS] FETCH phase disables register writes: actual=00000000
+# [PASS] FETCH phase disables RAM writes: actual=00000000
+# [PASS] FETCH holds PC: actual=00000014
+# [PASS] OR x6: actual=0000000b
+# [PASS] FETCH phase disables register writes: actual=00000000
+# [PASS] FETCH phase disables RAM writes: actual=00000000
+# [PASS] FETCH holds PC: actual=00000018
+# [PASS] XOR x7: actual=00000009
+# [PASS] FETCH phase disables register writes: actual=00000000
+# [PASS] FETCH phase disables RAM writes: actual=00000000
+# [PASS] FETCH holds PC: actual=0000001c
+# [PASS] LUI x8: actual=12345000
+# 
+# TEST 3: SW and three-cycle LW
+# [PASS] FETCH phase disables register writes: actual=00000000
+# [PASS] FETCH phase disables RAM writes: actual=00000000
+# [PASS] FETCH holds PC: actual=00000020
+# [PASS] SW advances PC to 36: actual=00000024
+# [PASS] SW stores 13: actual=0000000d
+# [PASS] FETCH after SW cannot repeat RAM write: actual=00000000
+# [PASS] LW FETCH holds PC: actual=00000024
+# [PASS] LW FETCH does not write x9: actual=00000000
+# [PASS] LW EXECUTE holds PC: actual=00000024
+# [PASS] LW EXECUTE does not write x9: actual=00000000
+# [PASS] LW LOAD_WB advances PC: actual=00000028
+# [PASS] LW writes 13 into x9: actual=0000000d
+# 
+# TEST 4: branches and jumps
+# [PASS] FETCH phase disables register writes: actual=00000000
+# [PASS] FETCH phase disables RAM writes: actual=00000000
+# [PASS] FETCH holds PC: actual=00000028
+# [PASS] BEQ jumps to 48: actual=00000030
+# [PASS] x10 is skipped: actual=00000000
+# [PASS] FETCH phase disables register writes: actual=00000000
+# [PASS] FETCH phase disables RAM writes: actual=00000000
+# [PASS] FETCH holds PC: actual=00000030
+# [PASS] BNE jumps to 56: actual=00000038
+# [PASS] x11 is skipped: actual=00000000
+# [PASS] FETCH phase disables register writes: actual=00000000
+# [PASS] FETCH phase disables RAM writes: actual=00000000
+# [PASS] FETCH holds PC: actual=00000038
+# [PASS] JAL jumps to 64: actual=00000040
+# [PASS] JAL return address: actual=0000003c
+# [PASS] FETCH phase disables register writes: actual=00000000
+# [PASS] FETCH phase disables RAM writes: actual=00000000
+# [PASS] FETCH holds PC: actual=00000040
+# [PASS] x14 contains JALR target: actual=0000004c
+# [PASS] FETCH phase disables register writes: actual=00000000
+# [PASS] FETCH phase disables RAM writes: actual=00000000
+# [PASS] FETCH holds PC: actual=00000044
+# [PASS] JALR jumps to 76: actual=0000004c
+# [PASS] JALR return address: actual=00000048
+# [PASS] x16 is skipped: actual=00000000
+# [PASS] FETCH phase disables register writes: actual=00000000
+# [PASS] FETCH phase disables RAM writes: actual=00000000
+# [PASS] FETCH holds PC: actual=0000004c
+# [PASS] program completion value: actual=0000001f
+# [PASS] PC advances to 80: actual=00000050
+# 
+# TEST 5: completion loop
+# [PASS] FETCH phase disables register writes: actual=00000000
+# [PASS] FETCH phase disables RAM writes: actual=00000000
+# [PASS] FETCH holds PC: actual=00000050
+# [PASS] FETCH phase disables register writes: actual=00000000
+# [PASS] FETCH phase disables RAM writes: actual=00000000
+# [PASS] FETCH holds PC: actual=00000050
+# [PASS] JAL x0,0 holds completion PC: actual=00000050
+# [PASS] x0 remains zero: actual=00000000
+# 
+# TEST 6: reset after execution
+# [PASS] PC returns to zero: actual=00000000
+# [PASS] x17 is cleared: actual=00000000
+# [PASS] RAM output is masked to zero: actual=00000000
+# 
+# ========================================
+# tb_cpu_top PASS: checks=88
+# ========================================
+# 
+# ** Note: $stop    : D:/02GitHub/01riscv-fpga-soc/Qproject/../sim/tb_cpu_top.v(169)
+#    Time: 754 ns  Iteration: 0  Instance: /tb_cpu_top
+# Break in Module tb_cpu_top at D:/02GitHub/01riscv-fpga-soc/Qproject/../sim/tb_cpu_top.v line 169
+# Elapsed time: 0:00:48
+# Errors: 0, Warnings: 0

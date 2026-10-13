@@ -1,0 +1,33 @@
+[PASS] asynchronous reset clears output
+[PASS] asynchronous reset clears read data
+[PASS] reset prevents writes
+[PASS] output holds before write edge
+[PASS] output updates at write edge
+[PASS] read data holds before read edge
+[PASS] read data arrives after read edge
+[PASS] write keeps only low eight bits
+[PASS] output read is zero extended
+[PASS] unselected writes are ignored
+[PASS] unselected reads return zero
+[PASS] disabled writes preserve output
+[PASS] no read request returns zero
+[PASS] input register cannot be written
+[PASS] invalid offset writes are ignored
+[PASS] unaligned writes are ignored
+[PASS] different base writes are ignored
+[PASS] invalid offset reads return zero
+[PASS] unaligned reads return zero
+[PASS] different base reads return zero
+[PASS] input change is not immediately visible
+[PASS] first synchronization edge keeps old input
+[PASS] second synchronization edge captures input
+[PASS] input read is zero extended
+[PASS] input read follows later input changes
+[PASS] simultaneous read returns old output
+[PASS] simultaneous write updates output
+[PASS] next read returns new output
+[PASS] running output clears asynchronously
+[PASS] running read data clears asynchronously
+[PASS] input synchronizer clears
+[PASS] writes work after reset
+tb_gpio PASS: checks=32

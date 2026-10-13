@@ -1,0 +1,6 @@
+TEST 1: all 13 supported instructions
+TEST 2: register address fields
+TEST 3: immediate fields
+TEST 4: unsupported encodings
+TEST 5: valid-invalid transitions
+tb_decoder PASS: checks=57

@@ -1,6 +1,8 @@
-/Qproject/.qsys_edit/
-/Qproject/MCU_nativelink_simulation.rpt
-/Qproject/db/
-/Qproject/incremental_db/
-/Qproject/output_files/
-/Qproject/simulation/
+# Keep source and project documentation visible to Git.
+# Generated outputs already included in the complete snapshot remain tracked.
+**/db/
+**/incremental_db/
+**/output_files/
+**/.qsys_edit/
+**/Qproject/simulation/
+**/*_nativelink_simulation.rpt

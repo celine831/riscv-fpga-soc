@@ -1,0 +1,29 @@
+
+TEST 1: reset masks RAM output
+[PASS] rdata is zero during reset: actual=00000000
+
+TEST 2: synchronous write and read
+[PASS] address 0 is returned one clock after read request: actual=deadbeef
+
+TEST 3: multiple and boundary addresses
+[PASS] read address 4: actual=11111111
+[PASS] read address 8: actual=12345678
+[PASS] read address 1020: actual=ffff0000
+
+TEST 4: invalid addresses
+[PASS] misaligned address returns zero: actual=00000000
+[PASS] out-of-range address returns zero: actual=00000000
+[PASS] invalid writes do not change address 0: actual=deadbeef
+
+TEST 5: read-during-write behavior
+[PASS] same-cycle read returns old data: actual=12345678
+[PASS] following read returns new data: actual=cafebabe
+
+TEST 6: reset does not clear M9K contents
+[PASS] rdata becomes zero immediately during reset: actual=00000000
+[PASS] stored data remains after reset: actual=deadbeef
+
+========================================
+tb_data_ram PASS: checks=12
+========================================
+

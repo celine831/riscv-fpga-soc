@@ -1,0 +1,8 @@
+TEST 1: reset
+TEST 2: write and dual read
+TEST 3: write disabled
+TEST 4: x0 protection
+TEST 5: same-address read and write
+TEST 6: all register addresses
+TEST 7: asynchronous reset and priority
+tb_regsfile PASS

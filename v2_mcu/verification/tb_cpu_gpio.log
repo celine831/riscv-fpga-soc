@@ -1,0 +1,189 @@
+[PASS] reset clears GPIO output
+[PASS] reset clears PC
+[PASS] baseline program reaches GPIO extension
+[PASS] baseline arithmetic completes
+[PASS] baseline RAM load completes
+[PASS] baseline completion marker
+[PASS] baseline RAM contains 13
+[PASS] GPIO untouched by RAM store
+[PASS] ordinary instruction advances PC
+[PASS] LUI forms GPIO base
+[PASS] ordinary instruction advances PC
+[PASS] ordinary instruction advances PC
+[PASS] CPU SW controls GPIO
+[PASS] GPIO store does not overwrite RAM
+[PASS] LW starts at expected PC
+[PASS] LW first cycle holds PC
+[PASS] LW first cycle leaves destination unchanged
+[PASS] LW first cycle receives correct response
+[PASS] LW second cycle advances PC
+[PASS] LW second cycle writes destination
+[PASS] LW starts at expected PC
+[PASS] LW first cycle holds PC
+[PASS] LW first cycle leaves destination unchanged
+[PASS] LW first cycle receives correct response
+[PASS] LW second cycle advances PC
+[PASS] LW second cycle writes destination
+[PASS] ordinary instruction advances PC
+[PASS] ordinary instruction advances PC
+[PASS] CPU output write truncates to eight bits
+[PASS] LW starts at expected PC
+[PASS] LW first cycle holds PC
+[PASS] LW first cycle leaves destination unchanged
+[PASS] LW first cycle receives correct response
+[PASS] LW second cycle advances PC
+[PASS] LW second cycle writes destination
+[PASS] LW starts at expected PC
+[PASS] LW first cycle holds PC
+[PASS] LW first cycle leaves destination unchanged
+[PASS] LW first cycle receives correct response
+[PASS] LW second cycle advances PC
+[PASS] LW second cycle writes destination
+[PASS] ordinary instruction advances PC
+[PASS] CPU unaligned GPIO store is ignored
+[PASS] ordinary instruction advances PC
+[PASS] CPU cannot write GPIO input register
+[PASS] LW starts at expected PC
+[PASS] LW first cycle holds PC
+[PASS] LW first cycle leaves destination unchanged
+[PASS] LW first cycle receives correct response
+[PASS] LW second cycle advances PC
+[PASS] LW second cycle writes destination
+[PASS] LW starts at expected PC
+[PASS] LW first cycle holds PC
+[PASS] LW first cycle leaves destination unchanged
+[PASS] LW first cycle receives correct response
+[PASS] LW second cycle advances PC
+[PASS] LW second cycle writes destination
+[PASS] ordinary instruction advances PC
+[PASS] CPU invalid offset store is ignored
+[PASS] LW starts at expected PC
+[PASS] LW first cycle holds PC
+[PASS] LW first cycle leaves destination unchanged
+[PASS] LW first cycle receives correct response
+[PASS] LW second cycle advances PC
+[PASS] LW second cycle writes destination
+[PASS] ordinary instruction advances PC
+[PASS] ordinary instruction advances PC
+[PASS] unmapped store preserves GPIO
+[PASS] unmapped store preserves RAM
+[PASS] LW starts at expected PC
+[PASS] LW first cycle holds PC
+[PASS] LW first cycle leaves destination unchanged
+[PASS] LW first cycle receives correct response
+[PASS] LW second cycle advances PC
+[PASS] LW second cycle writes destination
+[PASS] ordinary instruction advances PC
+[PASS] ordinary instruction advances PC
+[PASS] final GPIO output is one
+[PASS] LW starts at expected PC
+[PASS] LW first cycle holds PC
+[PASS] LW first cycle leaves destination unchanged
+[PASS] LW first cycle receives correct response
+[PASS] LW second cycle advances PC
+[PASS] LW second cycle writes destination
+[PASS] LW starts at expected PC
+[PASS] LW first cycle holds PC
+[PASS] LW first cycle leaves destination unchanged
+[PASS] LW first cycle receives correct response
+[PASS] LW second cycle advances PC
+[PASS] LW second cycle writes destination
+[PASS] program stops in JAL loop
+[PASS] GPIO stays stable after completion
+[PASS] zero register stays zero
+[PASS] reset clears GPIO output
+[PASS] reset clears PC
+[PASS] baseline program reaches GPIO extension
+[PASS] baseline arithmetic completes
+[PASS] baseline RAM load completes
+[PASS] baseline completion marker
+[PASS] baseline RAM contains 13
+[PASS] GPIO untouched by RAM store
+[PASS] ordinary instruction advances PC
+[PASS] LUI forms GPIO base
+[PASS] ordinary instruction advances PC
+[PASS] ordinary instruction advances PC
+[PASS] CPU SW controls GPIO
+[PASS] GPIO store does not overwrite RAM
+[PASS] LW starts at expected PC
+[PASS] LW first cycle holds PC
+[PASS] LW first cycle leaves destination unchanged
+[PASS] LW first cycle receives correct response
+[PASS] LW second cycle advances PC
+[PASS] LW second cycle writes destination
+[PASS] LW starts at expected PC
+[PASS] LW first cycle holds PC
+[PASS] LW first cycle leaves destination unchanged
+[PASS] LW first cycle receives correct response
+[PASS] LW second cycle advances PC
+[PASS] LW second cycle writes destination
+[PASS] ordinary instruction advances PC
+[PASS] ordinary instruction advances PC
+[PASS] CPU output write truncates to eight bits
+[PASS] LW starts at expected PC
+[PASS] LW first cycle holds PC
+[PASS] LW first cycle leaves destination unchanged
+[PASS] LW first cycle receives correct response
+[PASS] LW second cycle advances PC
+[PASS] LW second cycle writes destination
+[PASS] LW starts at expected PC
+[PASS] LW first cycle holds PC
+[PASS] LW first cycle leaves destination unchanged
+[PASS] LW first cycle receives correct response
+[PASS] LW second cycle advances PC
+[PASS] LW second cycle writes destination
+[PASS] ordinary instruction advances PC
+[PASS] CPU unaligned GPIO store is ignored
+[PASS] ordinary instruction advances PC
+[PASS] CPU cannot write GPIO input register
+[PASS] LW starts at expected PC
+[PASS] LW first cycle holds PC
+[PASS] LW first cycle leaves destination unchanged
+[PASS] LW first cycle receives correct response
+[PASS] LW second cycle advances PC
+[PASS] LW second cycle writes destination
+[PASS] LW starts at expected PC
+[PASS] LW first cycle holds PC
+[PASS] LW first cycle leaves destination unchanged
+[PASS] LW first cycle receives correct response
+[PASS] LW second cycle advances PC
+[PASS] LW second cycle writes destination
+[PASS] ordinary instruction advances PC
+[PASS] CPU invalid offset store is ignored
+[PASS] LW starts at expected PC
+[PASS] LW first cycle holds PC
+[PASS] LW first cycle leaves destination unchanged
+[PASS] LW first cycle receives correct response
+[PASS] LW second cycle advances PC
+[PASS] LW second cycle writes destination
+[PASS] ordinary instruction advances PC
+[PASS] ordinary instruction advances PC
+[PASS] unmapped store preserves GPIO
+[PASS] unmapped store preserves RAM
+[PASS] LW starts at expected PC
+[PASS] LW first cycle holds PC
+[PASS] LW first cycle leaves destination unchanged
+[PASS] LW first cycle receives correct response
+[PASS] LW second cycle advances PC
+[PASS] LW second cycle writes destination
+[PASS] ordinary instruction advances PC
+[PASS] ordinary instruction advances PC
+[PASS] final GPIO output is one
+[PASS] LW starts at expected PC
+[PASS] LW first cycle holds PC
+[PASS] LW first cycle leaves destination unchanged
+[PASS] LW first cycle receives correct response
+[PASS] LW second cycle advances PC
+[PASS] LW second cycle writes destination
+[PASS] LW starts at expected PC
+[PASS] LW first cycle holds PC
+[PASS] LW first cycle leaves destination unchanged
+[PASS] LW first cycle receives correct response
+[PASS] LW second cycle advances PC
+[PASS] LW second cycle writes destination
+[PASS] program stops in JAL loop
+[PASS] GPIO stays stable after completion
+[PASS] zero register stays zero
+[PASS] final asynchronous reset clears GPIO
+[PASS] final asynchronous reset masks memory data
+tb_cpu_gpio PASS: checks=188
