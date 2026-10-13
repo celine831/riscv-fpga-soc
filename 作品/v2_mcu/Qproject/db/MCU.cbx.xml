@@ -1,6 +1,0 @@
-<?xml version="1.0" ?>
-<LOG_ROOT>
-	<PROJECT NAME="MCU">
-		<CBX_INST_ENTRY INSTANCE_NAME="|fpga_top|cpu_top:cpu_top_inst|data_ram:data_ram_inst|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_o9a1.tdf"/>
-	</PROJECT>
-</LOG_ROOT>
