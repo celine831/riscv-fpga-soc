@@ -1,0 +1,30 @@
+
+TEST 1: asynchronous reset
+[PASS] PC becomes zero immediately during reset: pc=00000000
+[PASS] PC stays zero on rising edge during reset: pc=00000000
+
+TEST 2: release reset
+[PASS] releasing reset does not immediately change PC: pc=00000000
+
+TEST 3: update PC on rising edge
+[PASS] PC keeps old value before rising edge: pc=00000000
+[PASS] PC captures 4 on rising edge: pc=00000004
+
+TEST 4: PC holds value between rising edges
+[PASS] PC still holds 4 before next rising edge: pc=00000004
+[PASS] PC captures 8 on next rising edge: pc=00000008
+
+TEST 5: arbitrary next PC value
+[PASS] PC captures address 0x00000100: pc=00000100
+
+TEST 6: asynchronous reset priority
+[PASS] asynchronous reset clears running PC immediately: pc=00000000
+[PASS] reset has priority over pc_next on rising edge: pc=00000000
+
+TEST 7: resume after reset
+[PASS] PC resumes updating after reset: pc=00000040
+
+========================================
+tb_pc_reg PASS: checks=11
+========================================
+

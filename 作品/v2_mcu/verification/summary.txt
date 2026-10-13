@@ -1,0 +1,59 @@
+RV32I subset MCU final verification summary
+Stage: Timer local interrupt + bidirectional UART; fpga_top ROM_PROGRAM=5
+Project: D:/02GitHub/01riscv-fpga-soc/v2_mcu
+
+FUNCTIONAL REGRESSION
+Tool: ModelSim SE-64 10.5; Verilog-2001 (-vlog01compat)
+Run: isolated simulation library
+Test set: sim/run_all.do; complete log: verification/final_regression.log
+
+tb_alu PASS: checks=16; errors=0
+tb_regsfile PASS: checks not printed; errors=0
+tb_decoder PASS: checks=57; errors=0
+tb_imm_gen PASS: checks=101; errors=0
+tb_control_unit PASS: checks=19; errors=0
+tb_pc_reg PASS: checks=11; errors=0
+tb_instr_rom PASS: checks=25; errors=0
+tb_data_ram PASS: checks=12; errors=0
+tb_cpu_top PASS: checks=32; errors=0
+tb_gpio PASS: checks=32; errors=0
+tb_cpu_gpio PASS: checks=188; errors=0
+tb_fpga_top PASS: checks=213; errors=0
+tb_timer PASS: checks=13; errors=0
+tb_cpu_timer PASS: checks=12; errors=0
+tb_fpga_timer PASS: checks=135; errors=0
+tb_uart_tx PASS: checks=12; errors=0
+tb_cpu_uart PASS: checks=14; errors=0
+tb_fpga_uart PASS: checks=5; errors=0
+tb_uart_rx PASS: checks=11; errors=0
+tb_cpu_uart_rx PASS: checks=10; errors=0
+tb_fpga_uart_rx PASS: checks=5; errors=0
+tb_irq_csrs PASS: checks=10; errors=0
+tb_timer_irq PASS: checks=15; errors=0
+ALL 23 TESTBENCHES PASSED
+
+Compilation: 0 errors, 0 warnings. Optimization: legacy testbenches emit unconnected UART-port warnings (see full log).
+tb_cpu_corner is compiled but NOT run by the 23-test regression. checks are assertion counts, not coverage percentages.
+Legacy tb_*.log files are earlier-stage records; use the final_regression log above for this result.
+
+FPGA IMPLEMENTATION (existing Quartus reports, not a new compilation)
+Quartus II 13.0.1; Cyclone IV E EP4CE10F17C8; fpga_top
+Full compilation successful: 
+Fitter: 3576/10320 LEs (35%); 1518 registers; 6 pins; 8192 memory bits; 1/46 M9K blocks
+Clock: sys_clk 20.000 ns (50 MHz); loaded SDC: Qproject/MCU.sdc
+Worst multicorner slack (ns): setup +0.712; hold +0.179; recovery +15.045; removal +1.729; minimum pulse width +9.370
+All reported corner TNS values: 0.000 ns; slow 85C Fmax: 51.85 MHz
+Timing scope: constrained internal paths pass. Report retains 2 unconstrained input ports and 3 unconstrained output ports.
+Reports: Qproject/output_files/MCU.fit.summary, MCU.fit.rpt, MCU.sta.summary, MCU.sta.rpt, MCU.flow.rpt
+SOF: Qproject/output_files/MCU.sof
+SOF SHA256: 92e6ef8dcd5c05dcc5aa1708c68f55d7366c1d86988a95f9ef5fbdfd590c9bd8
+
+BOARD VALIDATION (previously confirmed by user, not repeated in this document update)
+Source: ChatGPT project conversation "继续做GPIO与MMIO"; final-stage confirmation
+Confirmed: bidirectional UART; ASCII 0/1 immediately control D7; Timer interrupt continues toggling D7 afterward.
+Default UART: 115200 8N1; actual divider rate 50000000/434 = 115207.37 baud.
+Timer: 25000000 clocks = 0.5 s per expiry; local interrupt cause 16, mie/mip bit16 (not standard machine timer cause 7).
+
+IMPLEMENTATION NOTES
+Ordinary instructions: 2 clocks; LW: 4 clocks (FETCH, EXEC-read, FETCH-wait, EXEC-writeback).
+No claim of full RV32I/privileged compliance, full exception handling, FIFO reception, exhaustive interrupt-boundary testing, or external-I/O timing closure.

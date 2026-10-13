@@ -1,0 +1,1393 @@
+# do C:/Users/mrsevan/.codex/visualizations//01a13509-9d7c-7221-9305-e17ffcd527c8/final_regression.do
+# D:/02GitHub/01riscv-fpga-soc/v2_mcu
+# C:/Users/mrsevan/.codex/visualizations//01a13509-9d7c-7221-9305-e17ffcd527c8/final_sim_work
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 
+# vmap -c 
+# Copying D:/00study/01fpga/DownloadSoftware/modelsim_se/win64/../modelsim.ini to modelsim.ini
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 
+# vmap codexfinal C:/Users/mrsevan/.codex/visualizations//01a13509-9d7c-7221-9305-e17ffcd527c8/final_sim_work 
+# Modifying modelsim.ini
+# D:/02GitHub/01riscv-fpga-soc/v2_mcu/rtl/alu.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/rtl/control_unit.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/rtl/cpu_top.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/rtl/data_ram.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/rtl/decoder.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/rtl/fpga_top.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/rtl/gpio.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/rtl/imm_gen.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/rtl/instr_rom.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/rtl/irq_csrs.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/rtl/pc_reg.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/rtl/regsfile.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/rtl/timer.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/rtl/uart_rx.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/rtl/uart_tx.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_alu.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_control_unit.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_cpu_corner.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_cpu_gpio.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_cpu_timer.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_cpu_top.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_cpu_uart.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_cpu_uart_rx.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_data_ram.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_decoder.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_fpga_timer.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_fpga_top.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_fpga_uart.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_fpga_uart_rx.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_gpio.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_imm_gen.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_instr_rom.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_irq_csrs.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_pc_reg.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_regsfile.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_timer.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_timer_irq.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_uart_rx.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_uart_tx.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 
+# vlog -vlog01compat -work codexfinal D:/02GitHub/01riscv-fpga-soc/v2_mcu/rtl/alu.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/rtl/control_unit.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/rtl/cpu_top.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/rtl/data_ram.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/rtl/decoder.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/rtl/fpga_top.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/rtl/gpio.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/rtl/imm_gen.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/rtl/instr_rom.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/rtl/irq_csrs.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/rtl/pc_reg.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/rtl/regsfile.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/rtl/timer.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/rtl/uart_rx.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/rtl/uart_tx.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_alu.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_control_unit.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_cpu_corner.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_cpu_gpio.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_cpu_timer.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_cpu_top.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_cpu_uart.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_cpu_uart_rx.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_data_ram.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_decoder.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_fpga_timer.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_fpga_top.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_fpga_uart.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_fpga_uart_rx.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_gpio.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_imm_gen.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_instr_rom.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_irq_csrs.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_pc_reg.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_regsfile.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_timer.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_timer_irq.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_uart_rx.v D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_uart_tx.v 
+# -- Compiling module alu
+# -- Compiling module control_unit
+# -- Compiling module cpu_top
+# -- Compiling module data_ram
+# -- Compiling module decoder
+# -- Compiling module fpga_top
+# -- Compiling module gpio
+# -- Compiling module imm_gen
+# -- Compiling module instr_rom
+# -- Compiling module irq_csrs
+# -- Compiling module pc_reg
+# -- Compiling module regsfile
+# -- Compiling module timer
+# -- Compiling module uart_rx
+# -- Compiling module uart_tx
+# -- Compiling module tb_alu
+# -- Compiling module tb_control_unit
+# -- Compiling module tb_cpu_corner
+# -- Compiling module tb_cpu_gpio
+# -- Compiling module tb_cpu_timer
+# -- Compiling module tb_cpu_top
+# -- Compiling module tb_cpu_uart
+# -- Compiling module tb_cpu_uart_rx
+# -- Compiling module tb_data_ram
+# -- Compiling module tb_decoder
+# -- Compiling module tb_fpga_timer
+# -- Compiling module tb_fpga_top
+# -- Compiling module tb_fpga_uart
+# -- Compiling module tb_fpga_uart_rx
+# -- Compiling module tb_gpio
+# -- Compiling module tb_imm_gen
+# -- Compiling module tb_instr_rom
+# -- Compiling module tb_irq_csrs
+# -- Compiling module tb_pc_reg
+# -- Compiling module tb_regsfile
+# -- Compiling module tb_timer
+# -- Compiling module tb_timer_irq
+# -- Compiling module tb_uart_rx
+# -- Compiling module tb_uart_tx
+# 
+# Top level modules:
+# 	tb_alu
+# 	tb_control_unit
+# 	tb_cpu_corner
+# 	tb_cpu_gpio
+# 	tb_cpu_timer
+# 	tb_cpu_top
+# 	tb_cpu_uart
+# 	tb_cpu_uart_rx
+# 	tb_data_ram
+# 	tb_decoder
+# 	tb_fpga_timer
+# 	tb_fpga_top
+# 	tb_fpga_uart
+# 	tb_fpga_uart_rx
+# 	tb_gpio
+# 	tb_imm_gen
+# 	tb_instr_rom
+# 	tb_irq_csrs
+# 	tb_pc_reg
+# 	tb_regsfile
+# 	tb_timer
+# 	tb_timer_irq
+# 	tb_uart_rx
+# 	tb_uart_tx
+# Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# tb_alu tb_regsfile tb_decoder tb_imm_gen tb_control_unit tb_pc_reg tb_instr_rom tb_data_ram tb_cpu_top tb_gpio tb_cpu_gpio tb_fpga_top tb_timer tb_cpu_timer tb_fpga_timer tb_uart_tx tb_cpu_uart tb_fpga_uart tb_uart_rx tb_cpu_uart_rx tb_fpga_uart_rx tb_irq_csrs tb_timer_irq
+# vsim -onfinish stop -voptargs="+acc" -t 1ps codexfinal.tb_alu 
+# ** Note: (vsim-3812) Design is being optimized...
+# //  ModelSim SE-64 10.5  
+# //
+# //  Copyright  Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading work.tb_alu(fast)
+# Loading work.alu(fast)
+# tb_alu PASS: checks=16
+# ** Note: $finish    : D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_alu.v(42)
+#    Time: 16 ns  Iteration: 0  Instance: /tb_alu
+# Break in Module tb_alu at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_alu.v line 42
+# Stopped at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_alu.v line 42
+# Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -onfinish stop -voptargs="+acc" -t 1ps codexfinal.tb_regsfile 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.tb_regsfile(fast)
+# Loading work.regsfile(fast)
+# TEST 1: reset
+# TEST 2: write and dual read
+# TEST 3: write disabled
+# TEST 4: x0 protection
+# TEST 5: same-address read and write
+# TEST 6: all register addresses
+# TEST 7: asynchronous reset and priority
+# tb_regsfile PASS
+# ** Note: $finish    : D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_regsfile.v(245)
+#    Time: 1601 ns  Iteration: 0  Instance: /tb_regsfile
+# Break in Module tb_regsfile at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_regsfile.v line 245
+# Stopped at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_regsfile.v line 245
+# Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -onfinish stop -voptargs="+acc" -t 1ps codexfinal.tb_decoder 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.tb_decoder(fast)
+# Loading work.decoder(fast)
+# TEST 1: all 13 supported instructions
+# TEST 2: register address fields
+# TEST 3: immediate fields
+# TEST 4: unsupported encodings
+# TEST 5: valid-invalid transitions
+# tb_decoder PASS: checks=57
+# ** Note: $finish    : D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_decoder.v(259)
+#    Time: 57 ns  Iteration: 0  Instance: /tb_decoder
+# Break in Module tb_decoder at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_decoder.v line 259
+# Stopped at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_decoder.v line 259
+# Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# vsim -onfinish stop -voptargs="+acc" -t 1ps codexfinal.tb_imm_gen 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.tb_imm_gen(fast)
+# Loading work.imm_gen(fast)
+# TEST: I format: sign extension and limits
+# TEST: S format: both split fields
+# TEST: B format: byte offsets, already shifted
+# TEST: U format: low 12 bits must be zero
+# TEST: J format: byte offsets, already shifted
+# TEST: walking one across B/J immediate fields
+# TEST: type changes with identical inst, including defaults
+# tb_imm_gen PASS: checks=101
+# ** Note: $finish    : D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_imm_gen.v(255)
+#    Time: 101 ns  Iteration: 0  Instance: /tb_imm_gen
+# Break in Module tb_imm_gen at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_imm_gen.v line 255
+# Stopped at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_imm_gen.v line 255
+# Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -onfinish stop -voptargs="+acc" -t 1ps codexfinal.tb_control_unit 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.tb_control_unit(fast)
+# Loading work.control_unit(fast)
+# 
+# TEST 1: reset disables all writes
+# [PASS] reset with SW input
+# [PASS] reset with ADD input
+# 
+# TEST 2: invalid instruction types
+# [PASS] TYPE_INVALID
+# [PASS] CSR writes old value to rd
+# [PASS] MRET does not write general registers
+# 
+# TEST 3: R-type instructions
+# [PASS] ADD control signals
+# [PASS] SUB control signals
+# [PASS] AND control signals
+# [PASS] OR control signals
+# [PASS] XOR control signals
+# 
+# TEST 4: immediate instructions
+# [PASS] ADDI control signals
+# [PASS] LUI control signals
+# 
+# TEST 5: load/store instructions
+# [PASS] LW control signals
+# [PASS] SW control signals
+# 
+# TEST 6: branch instructions
+# [PASS] BEQ control signals
+# [PASS] BNE control signals
+# 
+# TEST 7: jump instructions
+# [PASS] JAL control signals
+# [PASS] JALR control signals
+# 
+# TEST 8: reset priority during operation
+# [PASS] reset immediately disables SW
+# 
+# ========================================
+# tb_control_unit PASS: checks=19
+# ========================================
+# 
+# ** Note: $finish    : D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_control_unit.v(233)
+#    Time: 21 ns  Iteration: 0  Instance: /tb_control_unit
+# Break in Module tb_control_unit at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_control_unit.v line 233
+# Stopped at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_control_unit.v line 233
+# Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# vsim -onfinish stop -voptargs="+acc" -t 1ps codexfinal.tb_pc_reg 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.tb_pc_reg(fast)
+# Loading work.pc_reg(fast)
+# 
+# TEST 1: asynchronous reset
+# [PASS] PC becomes zero immediately during reset: pc=00000000
+# [PASS] PC stays zero on rising edge during reset: pc=00000000
+# 
+# TEST 2: release reset
+# [PASS] releasing reset does not immediately change PC: pc=00000000
+# 
+# TEST 3: update PC on rising edge
+# [PASS] PC keeps old value before rising edge: pc=00000000
+# [PASS] PC captures 4 on rising edge: pc=00000004
+# 
+# TEST 4: PC holds value between rising edges
+# [PASS] PC still holds 4 before next rising edge: pc=00000004
+# [PASS] PC captures 8 on next rising edge: pc=00000008
+# 
+# TEST 5: arbitrary next PC value
+# [PASS] PC captures address 0x00000100: pc=00000100
+# 
+# TEST 6: asynchronous reset priority
+# [PASS] asynchronous reset clears running PC immediately: pc=00000000
+# [PASS] reset has priority over pc_next on rising edge: pc=00000000
+# 
+# TEST 7: resume after reset
+# [PASS] PC resumes updating after reset: pc=00000040
+# 
+# ========================================
+# tb_pc_reg PASS: checks=11
+# ========================================
+# 
+# ** Note: $finish    : D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_pc_reg.v(140)
+#    Time: 56 ns  Iteration: 0  Instance: /tb_pc_reg
+# Break in Module tb_pc_reg at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_pc_reg.v line 140
+# Stopped at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_pc_reg.v line 140
+# Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# vsim -onfinish stop -voptargs="+acc" -t 1ps codexfinal.tb_instr_rom 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.tb_instr_rom(fast)
+# Loading work.instr_rom(fast)
+# 
+# TEST 1: reset output
+# [PASS] reset outputs NOP: addr=00000000 inst=00000013
+# 
+# TEST 2: complete instruction program
+# [PASS] addi x1,x0,10: addr=00000000 inst=00a00093
+# [PASS] addi x2,x0,3: addr=00000004 inst=00300113
+# [PASS] add x3,x1,x2: addr=00000008 inst=002081b3
+# [PASS] sub x4,x1,x2: addr=0000000c inst=40208233
+# [PASS] and x5,x1,x2: addr=00000010 inst=0020f2b3
+# [PASS] or x6,x1,x2: addr=00000014 inst=0020e333
+# [PASS] xor x7,x1,x2: addr=00000018 inst=0020c3b3
+# [PASS] lui x8,0x12345: addr=0000001c inst=12345437
+# [PASS] sw x3,0(x0): addr=00000020 inst=00302023
+# [PASS] lw x9,0(x0): addr=00000024 inst=00002483
+# [PASS] beq x9,x3,+8: addr=00000028 inst=00348463
+# [PASS] addi x10,x0,1: addr=0000002c inst=00100513
+# [PASS] bne x1,x2,+8: addr=00000030 inst=00209463
+# [PASS] addi x11,x0,1: addr=00000034 inst=00100593
+# [PASS] jal x12,+8: addr=00000038 inst=0080066f
+# [PASS] addi x13,x0,1: addr=0000003c inst=00100693
+# [PASS] addi x14,x0,76: addr=00000040 inst=04c00713
+# [PASS] jalr x15,0(x14): addr=00000044 inst=000707e7
+# [PASS] addi x16,x0,1: addr=00000048 inst=00100813
+# [PASS] addi x17,x0,31: addr=0000004c inst=01f00893
+# 
+# TEST 3: unused addresses
+# [PASS] program end outputs JAL x0,0: addr=00000050 inst=0000006f
+# [PASS] out-of-program address outputs NOP: addr=00000100 inst=00000013
+# [PASS] misaligned address outputs NOP: addr=00000001 inst=00000013
+# 
+# TEST 4: reset priority
+# [PASS] reset immediately forces NOP: inst=00000013
+# 
+# ========================================
+# tb_instr_rom PASS: checks=25
+# ========================================
+# 
+# ** Note: $finish    : D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_instr_rom.v(286)
+#    Time: 27 ns  Iteration: 0  Instance: /tb_instr_rom
+# Break in Module tb_instr_rom at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_instr_rom.v line 286
+# Stopped at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_instr_rom.v line 286
+# Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -onfinish stop -voptargs="+acc" -t 1ps codexfinal.tb_data_ram 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.tb_data_ram(fast)
+# Loading work.data_ram(fast)
+# 
+# TEST 1: reset masks RAM output
+# [PASS] rdata is zero during reset: actual=00000000
+# 
+# TEST 2: synchronous write and read
+# [PASS] address 0 is returned one clock after read request: actual=deadbeef
+# 
+# TEST 3: multiple and boundary addresses
+# [PASS] read address 4: actual=11111111
+# [PASS] read address 8: actual=12345678
+# [PASS] read address 1020: actual=ffff0000
+# 
+# TEST 4: invalid addresses
+# [PASS] misaligned address returns zero: actual=00000000
+# [PASS] out-of-range address returns zero: actual=00000000
+# [PASS] invalid writes do not change address 0: actual=deadbeef
+# 
+# TEST 5: read-during-write behavior
+# [PASS] same-cycle read returns old data: actual=12345678
+# [PASS] following read returns new data: actual=cafebabe
+# 
+# TEST 6: reset does not clear M9K contents
+# [PASS] rdata becomes zero immediately during reset: actual=00000000
+# [PASS] stored data remains after reset: actual=deadbeef
+# 
+# ========================================
+# tb_data_ram PASS: checks=12
+# ========================================
+# 
+# ** Note: $finish    : D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_data_ram.v(143)
+#    Time: 186 ns  Iteration: 0  Instance: /tb_data_ram
+# Break in Module tb_data_ram at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_data_ram.v line 143
+# Stopped at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_data_ram.v line 143
+# Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# vsim -onfinish stop -voptargs="+acc" -t 1ps codexfinal.tb_cpu_top 
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_cpu_top.v(15): (vopt-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 10, found 8.
+# ** Warning: D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_cpu_top.v(15): (vopt-2718) [TFMPC] - Missing connection for port 'uart_rx_pin'.
+# ** Warning: D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_cpu_top.v(15): (vopt-2718) [TFMPC] - Missing connection for port 'uart_tx_pin'.
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_rx(fast)".
+# Loading work.tb_cpu_top(fast)
+# Loading work.cpu_top(fast)
+# Loading work.pc_reg(fast)
+# Loading work.instr_rom(fast)
+# Loading work.decoder(fast)
+# Loading work.imm_gen(fast)
+# Loading work.control_unit(fast)
+# Loading work.regsfile(fast)
+# Loading work.alu(fast)
+# Loading work.data_ram(fast)
+# Loading work.gpio(fast)
+# Loading work.timer(fast)
+# Loading work.uart_tx(fast)
+# Loading work.uart_rx(fast)
+# Loading work.irq_csrs(fast)
+# 
+# TEST 1: asynchronous reset
+# [PASS] PC is zero: actual=00000000
+# [PASS] ROM outputs NOP: actual=00000013
+# [PASS] x1 is zero: actual=00000000
+# 
+# TEST 2: arithmetic and logic instructions
+# [PASS] ADDI x1: actual=0000000a
+# [PASS] ADDI x2: actual=00000003
+# [PASS] ADD x3: actual=0000000d
+# [PASS] SUB x4: actual=00000007
+# [PASS] AND x5: actual=00000002
+# [PASS] OR x6: actual=0000000b
+# [PASS] XOR x7: actual=00000009
+# [PASS] LUI x8: actual=12345000
+# 
+# TEST 3: SW and two-cycle LW
+# [PASS] SW advances PC to 36: actual=00000024
+# [PASS] SW stores 13: actual=0000000d
+# [PASS] LW first cycle holds PC: actual=00000024
+# [PASS] LW first cycle does not write x9: actual=00000000
+# [PASS] LW second cycle advances PC: actual=00000028
+# [PASS] LW writes 13 into x9: actual=0000000d
+# 
+# TEST 4: branches and jumps
+# [PASS] BEQ jumps to 48: actual=00000030
+# [PASS] x10 is skipped: actual=00000000
+# [PASS] BNE jumps to 56: actual=00000038
+# [PASS] x11 is skipped: actual=00000000
+# [PASS] JAL jumps to 64: actual=00000040
+# [PASS] JAL return address: actual=0000003c
+# [PASS] x14 contains JALR target: actual=0000004c
+# [PASS] JALR jumps to 76: actual=0000004c
+# [PASS] JALR return address: actual=00000048
+# [PASS] x16 is skipped: actual=00000000
+# [PASS] program completion value: actual=0000001f
+# [PASS] PC advances to 80: actual=00000050
+# 
+# TEST 5: reset after execution
+# [PASS] PC returns to zero: actual=00000000
+# [PASS] x17 is cleared: actual=00000000
+# [PASS] RAM output is masked to zero: actual=00000000
+# 
+# ========================================
+# tb_cpu_top PASS: checks=32
+# ========================================
+# 
+# ** Note: $finish    : D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_cpu_top.v(148)
+#    Time: 349 ns  Iteration: 0  Instance: /tb_cpu_top
+# Break in Module tb_cpu_top at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_cpu_top.v line 148
+# Stopped at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_cpu_top.v line 148
+# Elapsed time: 0:00:01
+# Errors: 0, Warnings: 3
+# vsim -onfinish stop -voptargs="+acc" -t 1ps codexfinal.tb_gpio 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.tb_gpio(fast)
+# Loading work.gpio(fast)
+# [PASS] asynchronous reset clears output
+# [PASS] asynchronous reset clears read data
+# [PASS] reset prevents writes
+# [PASS] output holds before write edge
+# [PASS] output updates at write edge
+# [PASS] read data holds before read edge
+# [PASS] read data arrives after read edge
+# [PASS] write keeps only low eight bits
+# [PASS] output read is zero extended
+# [PASS] unselected writes are ignored
+# [PASS] unselected reads return zero
+# [PASS] disabled writes preserve output
+# [PASS] no read request returns zero
+# [PASS] input register cannot be written
+# [PASS] invalid offset writes are ignored
+# [PASS] unaligned writes are ignored
+# [PASS] different base writes are ignored
+# [PASS] invalid offset reads return zero
+# [PASS] unaligned reads return zero
+# [PASS] different base reads return zero
+# [PASS] input change is not immediately visible
+# [PASS] first synchronization edge keeps old input
+# [PASS] second synchronization edge captures input
+# [PASS] input read is zero extended
+# [PASS] input read follows later input changes
+# [PASS] simultaneous read returns old output
+# [PASS] simultaneous write updates output
+# [PASS] next read returns new output
+# [PASS] running output clears asynchronously
+# [PASS] running read data clears asynchronously
+# [PASS] input synchronizer clears
+# [PASS] writes work after reset
+# tb_gpio PASS: checks=32
+# ** Note: $finish    : D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_gpio.v(122)
+#    Time: 256 ns  Iteration: 0  Instance: /tb_gpio
+# Break in Module tb_gpio at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_gpio.v line 122
+# Stopped at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_gpio.v line 122
+# Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -onfinish stop -voptargs="+acc" -t 1ps codexfinal.tb_cpu_gpio 
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_cpu_gpio.v(12): (vopt-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 10, found 8.
+# ** Warning: D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_cpu_gpio.v(12): (vopt-2718) [TFMPC] - Missing connection for port 'uart_rx_pin'.
+# ** Warning: D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_cpu_gpio.v(12): (vopt-2718) [TFMPC] - Missing connection for port 'uart_tx_pin'.
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_rx(fast)".
+# Loading work.tb_cpu_gpio(fast)
+# Loading work.cpu_top(fast)
+# Loading work.pc_reg(fast)
+# Loading work.instr_rom(fast)
+# Loading work.decoder(fast)
+# Loading work.imm_gen(fast)
+# Loading work.control_unit(fast)
+# Loading work.regsfile(fast)
+# Loading work.alu(fast)
+# Loading work.data_ram(fast)
+# Loading work.gpio(fast)
+# Loading work.timer(fast)
+# Loading work.uart_tx(fast)
+# Loading work.uart_rx(fast)
+# Loading work.irq_csrs(fast)
+# [PASS] reset clears GPIO output
+# [PASS] reset clears PC
+# [PASS] baseline program reaches GPIO extension
+# [PASS] baseline arithmetic completes
+# [PASS] baseline RAM load completes
+# [PASS] baseline completion marker
+# [PASS] baseline RAM contains 13
+# [PASS] GPIO untouched by RAM store
+# [PASS] ordinary instruction advances PC
+# [PASS] LUI forms GPIO base
+# [PASS] ordinary instruction advances PC
+# [PASS] ordinary instruction advances PC
+# [PASS] CPU SW controls GPIO
+# [PASS] GPIO store does not overwrite RAM
+# [PASS] LW starts at expected PC
+# [PASS] LW first cycle holds PC
+# [PASS] LW first cycle leaves destination unchanged
+# [PASS] LW first cycle receives correct response
+# [PASS] LW second cycle advances PC
+# [PASS] LW second cycle writes destination
+# [PASS] LW starts at expected PC
+# [PASS] LW first cycle holds PC
+# [PASS] LW first cycle leaves destination unchanged
+# [PASS] LW first cycle receives correct response
+# [PASS] LW second cycle advances PC
+# [PASS] LW second cycle writes destination
+# [PASS] ordinary instruction advances PC
+# [PASS] ordinary instruction advances PC
+# [PASS] CPU output write truncates to eight bits
+# [PASS] LW starts at expected PC
+# [PASS] LW first cycle holds PC
+# [PASS] LW first cycle leaves destination unchanged
+# [PASS] LW first cycle receives correct response
+# [PASS] LW second cycle advances PC
+# [PASS] LW second cycle writes destination
+# [PASS] LW starts at expected PC
+# [PASS] LW first cycle holds PC
+# [PASS] LW first cycle leaves destination unchanged
+# [PASS] LW first cycle receives correct response
+# [PASS] LW second cycle advances PC
+# [PASS] LW second cycle writes destination
+# [PASS] ordinary instruction advances PC
+# [PASS] CPU unaligned GPIO store is ignored
+# [PASS] ordinary instruction advances PC
+# [PASS] CPU cannot write GPIO input register
+# [PASS] LW starts at expected PC
+# [PASS] LW first cycle holds PC
+# [PASS] LW first cycle leaves destination unchanged
+# [PASS] LW first cycle receives correct response
+# [PASS] LW second cycle advances PC
+# [PASS] LW second cycle writes destination
+# [PASS] LW starts at expected PC
+# [PASS] LW first cycle holds PC
+# [PASS] LW first cycle leaves destination unchanged
+# [PASS] LW first cycle receives correct response
+# [PASS] LW second cycle advances PC
+# [PASS] LW second cycle writes destination
+# [PASS] ordinary instruction advances PC
+# [PASS] CPU invalid offset store is ignored
+# [PASS] LW starts at expected PC
+# [PASS] LW first cycle holds PC
+# [PASS] LW first cycle leaves destination unchanged
+# [PASS] LW first cycle receives correct response
+# [PASS] LW second cycle advances PC
+# [PASS] LW second cycle writes destination
+# [PASS] ordinary instruction advances PC
+# [PASS] ordinary instruction advances PC
+# [PASS] unmapped store preserves GPIO
+# [PASS] unmapped store preserves RAM
+# [PASS] LW starts at expected PC
+# [PASS] LW first cycle holds PC
+# [PASS] LW first cycle leaves destination unchanged
+# [PASS] LW first cycle receives correct response
+# [PASS] LW second cycle advances PC
+# [PASS] LW second cycle writes destination
+# [PASS] ordinary instruction advances PC
+# [PASS] ordinary instruction advances PC
+# [PASS] final GPIO output is one
+# [PASS] LW starts at expected PC
+# [PASS] LW first cycle holds PC
+# [PASS] LW first cycle leaves destination unchanged
+# [PASS] LW first cycle receives correct response
+# [PASS] LW second cycle advances PC
+# [PASS] LW second cycle writes destination
+# [PASS] LW starts at expected PC
+# [PASS] LW first cycle holds PC
+# [PASS] LW first cycle leaves destination unchanged
+# [PASS] LW first cycle receives correct response
+# [PASS] LW second cycle advances PC
+# [PASS] LW second cycle writes destination
+# [PASS] program stops in JAL loop
+# [PASS] GPIO stays stable after completion
+# [PASS] zero register stays zero
+# [PASS] reset clears GPIO output
+# [PASS] reset clears PC
+# [PASS] baseline program reaches GPIO extension
+# [PASS] baseline arithmetic completes
+# [PASS] baseline RAM load completes
+# [PASS] baseline completion marker
+# [PASS] baseline RAM contains 13
+# [PASS] GPIO untouched by RAM store
+# [PASS] ordinary instruction advances PC
+# [PASS] LUI forms GPIO base
+# [PASS] ordinary instruction advances PC
+# [PASS] ordinary instruction advances PC
+# [PASS] CPU SW controls GPIO
+# [PASS] GPIO store does not overwrite RAM
+# [PASS] LW starts at expected PC
+# [PASS] LW first cycle holds PC
+# [PASS] LW first cycle leaves destination unchanged
+# [PASS] LW first cycle receives correct response
+# [PASS] LW second cycle advances PC
+# [PASS] LW second cycle writes destination
+# [PASS] LW starts at expected PC
+# [PASS] LW first cycle holds PC
+# [PASS] LW first cycle leaves destination unchanged
+# [PASS] LW first cycle receives correct response
+# [PASS] LW second cycle advances PC
+# [PASS] LW second cycle writes destination
+# [PASS] ordinary instruction advances PC
+# [PASS] ordinary instruction advances PC
+# [PASS] CPU output write truncates to eight bits
+# [PASS] LW starts at expected PC
+# [PASS] LW first cycle holds PC
+# [PASS] LW first cycle leaves destination unchanged
+# [PASS] LW first cycle receives correct response
+# [PASS] LW second cycle advances PC
+# [PASS] LW second cycle writes destination
+# [PASS] LW starts at expected PC
+# [PASS] LW first cycle holds PC
+# [PASS] LW first cycle leaves destination unchanged
+# [PASS] LW first cycle receives correct response
+# [PASS] LW second cycle advances PC
+# [PASS] LW second cycle writes destination
+# [PASS] ordinary instruction advances PC
+# [PASS] CPU unaligned GPIO store is ignored
+# [PASS] ordinary instruction advances PC
+# [PASS] CPU cannot write GPIO input register
+# [PASS] LW starts at expected PC
+# [PASS] LW first cycle holds PC
+# [PASS] LW first cycle leaves destination unchanged
+# [PASS] LW first cycle receives correct response
+# [PASS] LW second cycle advances PC
+# [PASS] LW second cycle writes destination
+# [PASS] LW starts at expected PC
+# [PASS] LW first cycle holds PC
+# [PASS] LW first cycle leaves destination unchanged
+# [PASS] LW first cycle receives correct response
+# [PASS] LW second cycle advances PC
+# [PASS] LW second cycle writes destination
+# [PASS] ordinary instruction advances PC
+# [PASS] CPU invalid offset store is ignored
+# [PASS] LW starts at expected PC
+# [PASS] LW first cycle holds PC
+# [PASS] LW first cycle leaves destination unchanged
+# [PASS] LW first cycle receives correct response
+# [PASS] LW second cycle advances PC
+# [PASS] LW second cycle writes destination
+# [PASS] ordinary instruction advances PC
+# [PASS] ordinary instruction advances PC
+# [PASS] unmapped store preserves GPIO
+# [PASS] unmapped store preserves RAM
+# [PASS] LW starts at expected PC
+# [PASS] LW first cycle holds PC
+# [PASS] LW first cycle leaves destination unchanged
+# [PASS] LW first cycle receives correct response
+# [PASS] LW second cycle advances PC
+# [PASS] LW second cycle writes destination
+# [PASS] ordinary instruction advances PC
+# [PASS] ordinary instruction advances PC
+# [PASS] final GPIO output is one
+# [PASS] LW starts at expected PC
+# [PASS] LW first cycle holds PC
+# [PASS] LW first cycle leaves destination unchanged
+# [PASS] LW first cycle receives correct response
+# [PASS] LW second cycle advances PC
+# [PASS] LW second cycle writes destination
+# [PASS] LW starts at expected PC
+# [PASS] LW first cycle holds PC
+# [PASS] LW first cycle leaves destination unchanged
+# [PASS] LW first cycle receives correct response
+# [PASS] LW second cycle advances PC
+# [PASS] LW second cycle writes destination
+# [PASS] program stops in JAL loop
+# [PASS] GPIO stays stable after completion
+# [PASS] zero register stays zero
+# [PASS] final asynchronous reset clears GPIO
+# [PASS] final asynchronous reset masks memory data
+# tb_cpu_gpio PASS: checks=188
+# ** Note: $finish    : D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_cpu_gpio.v(125)
+#    Time: 2069 ns  Iteration: 0  Instance: /tb_cpu_gpio
+# Break in Module tb_cpu_gpio at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_cpu_gpio.v line 125
+# Stopped at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_cpu_gpio.v line 125
+# Elapsed time: 0:00:02
+# Errors: 0, Warnings: 3
+# vsim -onfinish stop -voptargs="+acc" -t 1ps codexfinal.tb_fpga_top 
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_fpga_top.v(10): (vopt-2685) [TFMPC] - Too few port connections for 'dut_low'.  Expected 6, found 4.
+# ** Warning: D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_fpga_top.v(10): (vopt-2718) [TFMPC] - Missing connection for port 'uart_rx_pin'.
+# ** Warning: D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_fpga_top.v(10): (vopt-2718) [TFMPC] - Missing connection for port 'uart_tx_pin'.
+# ** Warning: D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_fpga_top.v(12): (vopt-2685) [TFMPC] - Too few port connections for 'dut_high'.  Expected 6, found 4.
+# ** Warning: D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_fpga_top.v(12): (vopt-2718) [TFMPC] - Missing connection for port 'uart_rx_pin'.
+# ** Warning: D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_fpga_top.v(12): (vopt-2718) [TFMPC] - Missing connection for port 'uart_tx_pin'.
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_rx(fast)".
+# Loading work.tb_fpga_top(fast)
+# Loading work.fpga_top(fast)
+# Loading work.cpu_top(fast)
+# Loading work.pc_reg(fast)
+# Loading work.instr_rom(fast)
+# Loading work.decoder(fast)
+# Loading work.imm_gen(fast)
+# Loading work.control_unit(fast)
+# Loading work.regsfile(fast)
+# Loading work.alu(fast)
+# Loading work.data_ram(fast)
+# Loading work.gpio(fast)
+# Loading work.timer(fast)
+# Loading work.uart_tx(fast)
+# Loading work.uart_rx(fast)
+# Loading work.irq_csrs(fast)
+# Loading work.fpga_top(fast__1)
+# [PASS] active-low LEDs are off during reset
+# [PASS] active-high LEDs are off during reset
+# [PASS] first release edge keeps CPU reset asserted
+# [PASS] second release edge releases CPU reset
+# [PASS] CPU has not advanced on release edge
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] LED polarity follows logical values
+# [PASS] heartbeat toggles
+# [PASS] CPU-controlled LED output changed during program
+# [PASS] GPIO program completed
+# [PASS] CPU wrote final output one
+# [PASS] active-low final GPIO LED is on
+# [PASS] active-high final GPIO LED is on
+# [PASS] external reset immediately resets CPU
+# [PASS] external reset immediately switches LEDs off
+# tb_fpga_top PASS: checks=213
+# ** Note: $finish    : D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_fpga_top.v(57)
+#    Time: 2029 ns  Iteration: 0  Instance: /tb_fpga_top
+# Break in Module tb_fpga_top at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_fpga_top.v line 57
+# Stopped at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_fpga_top.v line 57
+# Elapsed time: 0:00:02
+# Errors: 0, Warnings: 6
+# vsim -onfinish stop -voptargs="+acc" -t 1ps codexfinal.tb_timer 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.tb_timer(fast)
+# Loading work.timer(fast)
+# [PASS] asynchronous reset clears timer
+# [PASS] synchronous MMIO read
+# [PASS] one shot starts
+# [PASS] one shot expires and stops
+# [PASS] synchronous MMIO read
+# [PASS] writing zero does not clear sticky status
+# [PASS] synchronous MMIO read
+# [PASS] periodic starts
+# [PASS] periodic reloads and stays enabled
+# [PASS] CTRL stops counter
+# [PASS] synchronous MMIO read
+# [PASS] synchronous MMIO read
+# [PASS] reset clears active configuration
+# tb_timer PASS: checks=13
+# ** Note: $finish    : D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_timer.v(68)
+#    Time: 543 ns  Iteration: 0  Instance: /tb_timer
+# Break in Module tb_timer at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_timer.v line 68
+# Stopped at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_timer.v line 68
+# Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -onfinish stop -voptargs="+acc" -t 1ps codexfinal.tb_cpu_timer 
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_cpu_timer.v(8): (vopt-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 10, found 8.
+# ** Warning: D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_cpu_timer.v(8): (vopt-2718) [TFMPC] - Missing connection for port 'uart_rx_pin'.
+# ** Warning: D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_cpu_timer.v(8): (vopt-2718) [TFMPC] - Missing connection for port 'uart_tx_pin'.
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_rx(fast)".
+# Loading work.tb_cpu_timer(fast)
+# Loading work.cpu_top(fast)
+# Loading work.pc_reg(fast)
+# Loading work.instr_rom(fast)
+# Loading work.decoder(fast)
+# Loading work.imm_gen(fast)
+# Loading work.control_unit(fast)
+# Loading work.regsfile(fast)
+# Loading work.alu(fast)
+# Loading work.data_ram(fast)
+# Loading work.gpio(fast)
+# Loading work.timer(fast)
+# Loading work.uart_tx(fast)
+# Loading work.uart_rx(fast)
+# Loading work.irq_csrs(fast)
+# [PASS] reset clears GPIO and timer
+# [PASS] CPU reaches timer polling
+# [PASS] CPU wrote timer load
+# [PASS] Timer start write is pending
+# [PASS] CPU enabled one shot
+# [PASS] CPU switched LED off while waiting
+# [PASS] CPU polls before timeout
+# [PASS] timer expires
+# [PASS] CPU reaches completion loop
+# [PASS] CPU writes LED one after expiration
+# [PASS] completion remains stable
+# [PASS] reset immediately clears output and timer
+# tb_cpu_timer PASS: checks=12
+# ** Note: $finish    : D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_cpu_timer.v(49)
+#    Time: 2549 ns  Iteration: 0  Instance: /tb_cpu_timer
+# Break in Module tb_cpu_timer at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_cpu_timer.v line 49
+# Stopped at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_cpu_timer.v line 49
+# Elapsed time: 0:00:02
+# Errors: 0, Warnings: 3
+# vsim -onfinish stop -voptargs="+acc" -t 1ps codexfinal.tb_fpga_timer 
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_fpga_timer.v(8): (vopt-2685) [TFMPC] - Too few port connections for 'low_dut'.  Expected 6, found 4.
+# ** Warning: D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_fpga_timer.v(8): (vopt-2718) [TFMPC] - Missing connection for port 'uart_rx_pin'.
+# ** Warning: D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_fpga_timer.v(8): (vopt-2718) [TFMPC] - Missing connection for port 'uart_tx_pin'.
+# ** Warning: D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_fpga_timer.v(11): (vopt-2685) [TFMPC] - Too few port connections for 'high_dut'.  Expected 6, found 4.
+# ** Warning: D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_fpga_timer.v(11): (vopt-2718) [TFMPC] - Missing connection for port 'uart_rx_pin'.
+# ** Warning: D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_fpga_timer.v(11): (vopt-2718) [TFMPC] - Missing connection for port 'uart_tx_pin'.
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_rx(fast)".
+# Loading work.tb_fpga_timer(fast)
+# Loading work.fpga_top(fast)
+# Loading work.cpu_top(fast)
+# Loading work.pc_reg(fast)
+# Loading work.instr_rom(fast)
+# Loading work.decoder(fast)
+# Loading work.imm_gen(fast)
+# Loading work.control_unit(fast)
+# Loading work.regsfile(fast)
+# Loading work.alu(fast)
+# Loading work.data_ram(fast)
+# Loading work.gpio(fast)
+# Loading work.timer(fast)
+# Loading work.uart_tx(fast)
+# Loading work.uart_rx(fast)
+# Loading work.irq_csrs(fast)
+# Loading work.fpga_top(fast__1)
+# Loading work.cpu_top(fast__1)
+# Loading work.timer(fast__1)
+# [PASS] reset switches both LEDs off
+# [PASS] heartbeat continues toggling
+# [PASS] Timer start write is pending
+# [PASS] timer starts while completion LED is off
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] LED polarity agrees
+# [PASS] completion LED lights after timer expiry
+# [PASS] reset immediately switches LEDs off again
+# tb_fpga_timer PASS: checks=135
+# ** Note: $finish    : D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_fpga_timer.v(51)
+#    Time: 2469 ns  Iteration: 0  Instance: /tb_fpga_timer
+# Break in Module tb_fpga_timer at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_fpga_timer.v line 51
+# Stopped at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_fpga_timer.v line 51
+# Elapsed time: 0:00:01
+# Errors: 0, Warnings: 6
+# vsim -onfinish stop -voptargs="+acc" -t 1ps codexfinal.tb_uart_tx 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.tb_uart_tx(fast)
+# Loading work.uart_tx(fast)
+# [PASS] reset gives idle high
+# [PASS] misaligned write ignored
+# [PASS] synchronous UART register read
+# [PASS] start bit low, busy asserted
+# [PASS] busy write cannot replace current frame
+# [PASS] synchronous UART register read
+# [PASS] transmission returns to idle
+# [PASS] new start bit low
+# [PASS] 8N1 data bits sent LSB first
+# [PASS] stop bit high
+# [PASS] full stop bit then idle
+# [PASS] asynchronous reset restores idle
+# tb_uart_tx PASS: checks=12
+# ** Note: $finish    : D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_uart_tx.v(69)
+#    Time: 1769 ns  Iteration: 0  Instance: /tb_uart_tx
+# Break in Module tb_uart_tx at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_uart_tx.v line 69
+# Stopped at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_uart_tx.v line 69
+# Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# vsim -onfinish stop -voptargs="+acc" -t 1ps codexfinal.tb_cpu_uart 
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_cpu_uart.v(10): (vopt-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 10, found 9.
+# ** Warning: D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_cpu_uart.v(10): (vopt-2718) [TFMPC] - Missing connection for port 'uart_rx_pin'.
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_rx(fast)".
+# Loading work.tb_cpu_uart(fast)
+# Loading work.cpu_top(fast)
+# Loading work.pc_reg(fast)
+# Loading work.instr_rom(fast)
+# Loading work.decoder(fast)
+# Loading work.imm_gen(fast)
+# Loading work.control_unit(fast)
+# Loading work.regsfile(fast)
+# Loading work.alu(fast)
+# Loading work.data_ram(fast)
+# Loading work.gpio(fast)
+# Loading work.timer(fast)
+# Loading work.uart_tx(fast)
+# Loading work.uart_rx(fast)
+# Loading work.irq_csrs(fast)
+# [PASS] reset UART idle
+# [PASS] UART start bit
+# [PASS] UART stop bit
+# [PASS] UART start bit
+# [PASS] UART stop bit
+# [PASS] UART start bit
+# [PASS] UART stop bit
+# [PASS] program reaches final UART loop
+# [PASS] timer expired before serial output
+# [PASS] first byte is O
+# [PASS] second byte is K
+# [PASS] third byte is newline
+# [PASS] UART becomes idle after final byte
+# [PASS] reset clears timer, GPIO and UART
+# tb_cpu_uart PASS: checks=14
+# ** Note: $finish    : D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_cpu_uart.v(57)
+#    Time: 5349 ns  Iteration: 0  Instance: /tb_cpu_uart
+# Break in Module tb_cpu_uart at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_cpu_uart.v line 57
+# Stopped at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_cpu_uart.v line 57
+# Elapsed time: 0:00:02
+# Errors: 0, Warnings: 2
+# vsim -onfinish stop -voptargs="+acc" -t 1ps codexfinal.tb_fpga_uart 
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_fpga_uart.v(7): (vopt-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 6, found 5.
+# ** Warning: D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_fpga_uart.v(7): (vopt-2718) [TFMPC] - Missing connection for port 'uart_rx_pin'.
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_rx(fast)".
+# Loading work.tb_fpga_uart(fast)
+# Loading work.fpga_top(fast)
+# Loading work.cpu_top(fast)
+# Loading work.pc_reg(fast)
+# Loading work.instr_rom(fast)
+# Loading work.decoder(fast)
+# Loading work.imm_gen(fast)
+# Loading work.control_unit(fast)
+# Loading work.regsfile(fast)
+# Loading work.alu(fast)
+# Loading work.data_ram(fast)
+# Loading work.gpio(fast)
+# Loading work.timer(fast)
+# Loading work.uart_tx(fast)
+# Loading work.uart_rx(fast)
+# Loading work.irq_csrs(fast)
+# [PASS] top reset turns LEDs off and UART idle
+# [PASS] top Timer starts with LED off and serial idle
+# [PASS] Timer expiry lights LED before UART program
+# [PASS] top UART pin transmits start bit
+# [PASS] top reset aborts UART and clears LEDs
+# tb_fpga_uart PASS: checks=5
+# ** Note: $finish    : D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_fpga_uart.v(45)
+#    Time: 2599 ns  Iteration: 0  Instance: /tb_fpga_uart
+# Break in Module tb_fpga_uart at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_fpga_uart.v line 45
+# Stopped at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_fpga_uart.v line 45
+# Elapsed time: 0:00:01
+# Errors: 0, Warnings: 2
+# vsim -onfinish stop -voptargs="+acc" -t 1ps codexfinal.tb_uart_rx 
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_rx(fast)".
+# Loading work.tb_uart_rx(fast)
+# Loading work.uart_rx(fast)
+# [PASS] reset clears valid and data
+# [PASS] short start glitch rejected
+# [PASS] first byte captured
+# [PASS] RX synchronous register read
+# [PASS] RX synchronous register read
+# [PASS] unacknowledged byte stays stable
+# [PASS] writing zero keeps valid
+# [PASS] RX synchronous register read
+# [PASS] RX synchronous register read
+# [PASS] RX synchronous register read
+# [PASS] asynchronous reset clears receive state
+# tb_uart_rx PASS: checks=11
+# ** Note: $finish    : D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_uart_rx.v(74)
+#    Time: 5263 ns  Iteration: 0  Instance: /tb_uart_rx
+# Break in Module tb_uart_rx at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_uart_rx.v line 74
+# Stopped at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_uart_rx.v line 74
+# Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# vsim -onfinish stop -voptargs="+acc" -t 1ps codexfinal.tb_cpu_uart_rx 
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_rx(fast)".
+# Loading work.tb_cpu_uart_rx(fast)
+# Loading work.cpu_top(fast)
+# Loading work.pc_reg(fast)
+# Loading work.instr_rom(fast)
+# Loading work.decoder(fast)
+# Loading work.imm_gen(fast)
+# Loading work.control_unit(fast)
+# Loading work.regsfile(fast)
+# Loading work.alu(fast)
+# Loading work.data_ram(fast)
+# Loading work.gpio(fast)
+# Loading work.timer(fast)
+# Loading work.uart_tx(fast)
+# Loading work.uart_rx(fast)
+# Loading work.irq_csrs(fast)
+# [PASS] reset clears GPIO and RX valid
+# [PASS] CPU reaches UART RX polling after TX completes
+# [PASS] CPU updates GPIO from UART command
+# [PASS] CPU acknowledges received byte
+# [PASS] CPU updates GPIO from UART command
+# [PASS] CPU acknowledges received byte
+# [PASS] unrecognized character keeps GPIO state
+# [PASS] CPU updates GPIO from UART command
+# [PASS] CPU acknowledges received byte
+# [PASS] reset immediately clears CPU RX and GPIO
+# tb_cpu_uart_rx PASS: checks=10
+# ** Note: $finish    : D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_cpu_uart_rx.v(76)
+#    Time: 15569 ns  Iteration: 0  Instance: /tb_cpu_uart_rx
+# Break in Module tb_cpu_uart_rx at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_cpu_uart_rx.v line 76
+# Stopped at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_cpu_uart_rx.v line 76
+# Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -onfinish stop -voptargs="+acc" -t 1ps codexfinal.tb_fpga_uart_rx 
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_rx(fast)".
+# Loading work.tb_fpga_uart_rx(fast)
+# Loading work.fpga_top(fast)
+# Loading work.cpu_top(fast)
+# Loading work.pc_reg(fast)
+# Loading work.instr_rom(fast)
+# Loading work.decoder(fast)
+# Loading work.imm_gen(fast)
+# Loading work.control_unit(fast)
+# Loading work.regsfile(fast)
+# Loading work.alu(fast)
+# Loading work.data_ram(fast)
+# Loading work.gpio(fast)
+# Loading work.timer(fast)
+# Loading work.uart_tx(fast)
+# Loading work.uart_rx(fast)
+# Loading work.irq_csrs(fast)
+# [PASS] top reset keeps LEDs off and TX idle
+# [PASS] top waits for command after Timer and TX
+# [PASS] sending ASCII 0 turns LED off
+# [PASS] sending ASCII 1 turns LED on
+# [PASS] top reset immediately switches LEDs off
+# tb_fpga_uart_rx PASS: checks=5
+# ** Note: $finish    : D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_fpga_uart_rx.v(59)
+#    Time: 11749 ns  Iteration: 0  Instance: /tb_fpga_uart_rx
+# Break in Module tb_fpga_uart_rx at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_fpga_uart_rx.v line 59
+# Stopped at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_fpga_uart_rx.v line 59
+# Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -onfinish stop -voptargs="+acc" -t 1ps codexfinal.tb_irq_csrs 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.tb_irq_csrs(fast)
+# Loading work.irq_csrs(fast)
+# [PASS] reset masks local timer
+# [PASS] mtvec direct mode aligns base
+# [PASS] mie enables only local bit16
+# [PASS] global MIE still masks pending source
+# [PASS] mip reflects sticky Timer
+# [PASS] local pending interrupt requests trap
+# [PASS] trap records cause and interrupted PC
+# [PASS] trap disables nesting
+# [PASS] MRET restores global MIE
+# [PASS] external reset immediately clears CSRs
+# tb_irq_csrs PASS: checks=10
+# ** Note: $finish    : D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_irq_csrs.v(61)
+#    Time: 99 ns  Iteration: 0  Instance: /tb_irq_csrs
+# Break in Module tb_irq_csrs at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_irq_csrs.v line 61
+# Stopped at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_irq_csrs.v line 61
+# Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# vsim -onfinish stop -voptargs="+acc" -t 1ps codexfinal.tb_timer_irq 
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_rx(fast)".
+# Loading work.tb_timer_irq(fast)
+# Loading work.cpu_top(fast)
+# Loading work.pc_reg(fast)
+# Loading work.instr_rom(fast)
+# Loading work.decoder(fast)
+# Loading work.imm_gen(fast)
+# Loading work.control_unit(fast)
+# Loading work.regsfile(fast)
+# Loading work.alu(fast)
+# Loading work.data_ram(fast)
+# Loading work.gpio(fast)
+# Loading work.timer(fast)
+# Loading work.uart_tx(fast)
+# Loading work.uart_rx(fast)
+# Loading work.irq_csrs(fast)
+# [PASS] reset disables interrupt
+# [PASS] interrupt cause is platform-local 16
+# [PASS] trap saves pending instruction address
+# [PASS] global interrupt masked in handler
+# [PASS] MRET resumes at saved PC
+# [PASS] handler toggles GPIO
+# [PASS] handler clears sticky Timer request
+# [PASS] interrupt cause is platform-local 16
+# [PASS] trap saves pending instruction address
+# [PASS] global interrupt masked in handler
+# [PASS] MRET resumes at saved PC
+# [PASS] handler toggles GPIO
+# [PASS] handler clears sticky Timer request
+# [PASS] two timer interrupts serviced
+# [PASS] reset clears interrupt and GPIO
+# tb_timer_irq PASS: checks=15
+# ** Note: $finish    : D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_timer_irq.v(63)
+#    Time: 10449 ns  Iteration: 0  Instance: /tb_timer_irq
+# Break in Module tb_timer_irq at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_timer_irq.v line 63
+# Stopped at D:/02GitHub/01riscv-fpga-soc/v2_mcu/sim/tb_timer_irq.v line 63
+# Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
